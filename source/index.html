@@ -7,8 +7,9 @@
   <body>
     <header class="page-header">
       <div class="wrapper">
-        <a href="" class="logo">
+        <a href="#" class="logo logo--short">
           <img src="img/pink.svg" width="74" height="23" alt="Логотип Pink.">
+        </a>
           <button class="toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -28,7 +29,6 @@
               </li>
             </ul>
           </nav>
-        </a>
       </div>
     </header>
 
@@ -116,12 +116,158 @@
           </div>
         </div>
       </section>
-      <section class="price">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Наши цены.</h2>
-          <table class="price__table"></table>
+      <section class="tariffs">
+        <div class="wrapper slider">
+          <h2 class="visually-hidden">Наши тарифы.</h2>
+          <table class="table tariffs__table">
+            <thead class="table__header">
+              <tr>
+                <th>
+                  <span class="visually-hidden">комплектация</span>
+                </th>
+                <th class="table__header__title">
+                  База
+                <b class="table__header__price">1,99 USD</b>
+                </th>
+                <th class="table__header__title">
+                  СТАНДАРТ
+                  <b class="table__header__price">3,99 USD</b>
+                </th>
+                <th class="table__header__title">
+                  АНЛИМ
+                  <b class="table__header__price">9,99 USD</b>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr>
+                <td class="table__feature">Розовый фильтр</td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--yes" src="img/yes.svg" alt="Да.">
+                  <span class="visually-hidden">есть</span>
+                </td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--yes" src="img/yes.svg" alt="Да.">
+                  <span class="visually-hidden">есть</span>
+                </td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--yes" src="img/yes.svg" alt="Да.">
+                  <span class="visually-hidden">есть</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="table__feature">Смайлики</td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--no" src="img/no.svg" alt="Нет.">
+                  <span class="visually-hidden">нет</span>
+                </td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--yes" src="img/yes.svg" alt="Да.">
+                  <span class="visually-hidden">есть</span>
+                </td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--yes" src="img/yes.svg" alt="Да.">
+                  <span class="visually-hidden">есть</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="table__feature">Комментарии</td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--no" src="img/no.svg" alt="Нет.">
+                  <span class="visually-hidden">нет</span>
+                </td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--no" src="img/no.svg" alt="Нет.">
+                  <span class="visually-hidden">нет</span>
+                </td>
+                <td class="table__feature">
+                  <img class="table__feature__picture table__feature__picture--yes" src="img/yes.svg" alt="Да.">
+                  <span class="visually-hidden">есть</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="slider__buttons">
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="slider__button slider__button--current" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
+          </div>
         </div>
       </section>
+
+      <section class="contacts">
+        <div class="wrapper">
+          <h2 class="contacts__title">Остались вопросы?
+            Свяжитесь с нами!</h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <h3 class="contacts__subtitle">Звоните:</h3>
+                <a class="contacts__link" href="tel: +78125556666">+7 (812) 555-66-66</a>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__subtitle">Пишите:</h3>
+                <a class="contacts__link" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__subtitle">Приезжайте в гости:</h3>
+                <address class="contacts__link contacts__address">ул. Большая
+                  Конюшенная, 19/8</address>
+              </li>
+            </ul>
+        </div>
+          <img class="contacts__map__picture" src="img/map.jpg" width="320" height="200" alt="Карта местности.">
+      </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="wrapper">
+        <section class="footer__logo">
+          <h2 class="visually-hidden">Логотип Pink</h2>
+          <a class="logo logo--full" href="#">
+            <svg class="logo--glasses" width="59" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m53.892 6.586 5.038 21.145a1.418 1.418 0 0 1-.22 1.297 1.356 1.356 0 0 1-1.183.535H53.52c-.69 5.812-5.57 10.315-11.489 10.315-5.917 0-10.798-4.503-11.488-10.314h-1.965C27.887 35.442 22.953 40 16.968 40c-5.994 0-10.934-4.573-11.612-10.466H1.45a1.388 1.388 0 0 1-1.154-.536 1.418 1.418 0 0 1-.24-1.267L5.106 6.586C5.455 4.26 7.639 0 13.486 0c.388 0 .76.157 1.034.435.274.279.428.657.428 1.05 0 .395-.154.772-.428 1.051a1.45 1.45 0 0 1-1.034.435c-4.707 0-5.438 3.694-5.497 4.1L3.341 26.602h2.034c.746-5.817 5.652-10.31 11.593-10.31 5.939 0 10.843 4.488 11.593 10.3l1.998.01c.745-5.75 5.598-10.189 11.473-10.189 5.886 0 10.746 4.456 11.477 10.222v-.053h2.137l-4.639-19.51c-.068-.407-.77-4.1-5.497-4.1a1.45 1.45 0 0 1-1.033-.436 1.498 1.498 0 0 1-.428-1.05c0-.394.154-.772.428-1.05A1.45 1.45 0 0 1 45.51 0c5.848 0 8.03 4.259 8.382 6.586Zm-28.22 22.977a9.122 9.122 0 0 0-.022-2.97c-.725-4.195-4.336-7.383-8.681-7.383-4.349 0-7.961 3.192-8.683 7.391a9.114 9.114 0 0 0-.025 2.94c.66 4.273 4.308 7.541 8.707 7.541 4.392 0 8.034-3.257 8.704-7.518Zm24.942 0c.073-.461.112-.934.112-1.417 0-4.868-3.893-8.815-8.694-8.815-4.802 0-8.695 3.947-8.695 8.815 0 .482.039.956.112 1.418.669 4.194 4.257 7.397 8.583 7.397 4.325 0 7.913-3.203 8.582-7.397Z" fill="#D22856"/></svg>
+            <svg class="logo--name" width="74" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.005 1.549A1.286 1.286 0 0 1 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549Zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04ZM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389Zm9.081.03A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874V21.65a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04Zm25.264-.03a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.268 1.268 0 0 1-.096-.485V1.389h-.01Z" fill="#000"/></svg>
+          </a>
+        </section>
+
+        <section class="social">
+          <h2 class="visually-hidden">Мы в соцсетях.</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.564.169A3.675 3.675 0 0 1 13.672.14c.688.196 1.291.59 1.723 1.122.71-.21 1.41-.447 2.131-.656a2.03 2.03 0 0 1-.253.917c-.157.284-.38.533-.653.729.253.026.508-.002.747-.081.24-.08.456-.208.633-.376-.099.414-.3.801-.588 1.131-.287.33-.653.594-1.07.772-.247 6.27-3.367 10.467-10.689 10.296H5.15c-.443 0-4.418-.428-5.149-1.75 1.752.245 3.539-.147 4.984-1.095-1.03-.286-2.852-.447-3.161-2.74.388.133.81.163 1.215.085C1.76 7.705.34 7.039.422 4.993c.398.306.905.462 1.421.438C1.102 5.203-.247 2.31.896.825c1.926 1.723 3.964 3.35 7.59 3.512C8.711 2.205 9.69.777 11.563.169Z" fill="#D22856"/></svg>
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="9" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.509 3.193H9V0H6.02C2.762.171 1.6 2.271 2.077 5.816H0v3.336h2.076V18h3.945V9.152h2.958V5.816H6.01c-.02-.998-.041-2.29.499-2.623Z" fill="#D22856"/></svg>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.834 12.809a1.257 1.257 0 0 1-1.285.03 1.097 1.097 0 0 1-.443-.457.97.97 0 0 1-.092-.603V1.221A.97.97 0 0 1 .106.618C.2.429.355.27.549.16a1.256 1.256 0 0 1 1.285.031l12.4 5.502c1.022.445 1.022 1.169 0 1.614l-12.4 5.502Z" fill="#D22856"/></svg>
+                <span class="visually-hidden">Ютьюб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="copyright">
+          <h2 class="visually-hidden">Разработано в HTML-академии.</h2>
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="#">
+            <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" fill="#D22856"/></svg>
+            <span class="visually-hidden">HTML-академия</span>
+          </a>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
