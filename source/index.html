@@ -5,8 +5,123 @@
     <title>HTML Academy: {{projectTitle}}</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <a href="" class="logo">
+          <img src="img/pink.svg" width="74" height="23" alt="Логотип Pink.">
+          <button class="toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Фотографии</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">конкурс</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">html academy</a>
+              </li>
+            </ul>
+          </nav>
+        </a>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">Pink - мобильно приложение для раскрашивания серых будней.</h1>
 
+      <section class="intro">
+        <div class="wrapper">
+          <h2 class="intro__title">Взгляните на жизнь
+            иначе!</h2>
+            <a class="intro__link" href="#">Скачать приложение</a>
+            <ul class="logo__list">
+              <li class="logo__item">
+                <a href="#" class=" logo__link logo__link--apple">
+                  <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple." class="logo__apple">
+                  <span class="visually-hidden">Скачать для iPhone и iPad.</span>
+                </a>
+              </li>
+              <li class="logo__item">
+                <a href="#" class=" logo__link logo__link--android">
+                  <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android." class="logo__android">
+                  <span class="visually-hidden">Скачать для Android.</span>
+                </a>
+              </li>
+              <li class="logo__item">
+                <a href="#" class=" logo__link logo__link--microsoft">
+                  <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft." class="logo__microsoft">
+                  <span class="visually-hidden">Скачать для Microsoft.</span>
+                </a>
+              </li>
+            </ul>
+            <p class="intro__information">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Преимущества приложения Pink.</h2>
+          <p class="advantages__slogan">Устали от серости мегаполиса?</p>
+          <p class="advantages__slogan">Нам есть, что вам предложить!</p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="wrapper slider">
+          <h2 class="visually-hidden">Отзывы о нас.</h2>
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+          <div class="slider__buttons">
+            <button class="slider__button slider__button--current" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="wrapper">
+          <h2 class="visually-hidden">Наши цены.</h2>
+          <table class="price__table"></table>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
