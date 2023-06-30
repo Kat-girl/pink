@@ -1,3 +1,25 @@
+@import "fonts.scss";
+
+// visually-hidden
+@import "visually-hidden.scss";
+
+// buttons
+@import "buttons/toggle.scss";
+
+// html
+@import "blocks/page.scss";
+
+// body
 @import "blocks/page__body.scss";
+
+// header
 @import "blocks/page-header.scss";
-@import "blocks/page-header__main.scss";
+
+// logo
+@import "blocks/logo.scss";
+
+// navigation
+@import "blocks/navigation.scss";
+
+// main
+@import "blocks/page-main.scss";

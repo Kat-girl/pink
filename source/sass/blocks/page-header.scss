@@ -2,3 +2,30 @@
   background: #1d2631 url("../../img/header-bg.jpg") no-repeat;
   color: #ffffff;
 }
+
+.page-header__main {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 22px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.page-header__additional {
+  background: url("../../img/hand-phone.png") no-repeat bottom;
+  background-size: 320px 286px;
+  height: 375px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+.page-header__title {
+  margin: 0;
+  margin-bottom: 34px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  text-align: center;
+}
