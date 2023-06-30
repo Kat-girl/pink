@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: {{projectTitle}}</title>
 </head>
-<body>
+<body class="page__body">
   <header class="page-header">
-    <div class="wrapper">
-      <a href="#" class="logo logo--short">
+    <div class="wrapper page-header__main">
+      <a href="index.html" class="logo logo--short">
         <img src="img/pink.svg" width="74" height="23" alt="Логотип Pink.">
       </a>
         <button class="toggle">
@@ -17,7 +18,7 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="index.html">главная</a>
+              <a class="navigation__link navigation__link--current" href="index.html">главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link navigation__link--current">Фотографии</a>
@@ -31,13 +32,13 @@
           </ul>
         </nav>
     </div>
+    <div class="wrapper page-header__additional">
+      <h1 class="intro__title">Фотографии
+        пользователей</h1>
+    </div>
   </header>
 
   <main class="page-main">
-    <header class="page-main__header">
-      <h1 class="page-main__title">Фотографии
-        пользователей</h1>
-    </header>
     <section class="catalog">
       <h2 class="catalog__title">Взгляните на фотографии, которые выкладывают
         пользователи! Видите, как не хватает ваших?</h2>
