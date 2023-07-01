@@ -1,11 +1,12 @@
 .page-header {
   background: #1d2631 url("../../img/header-bg.jpg") no-repeat;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .page-header__main {
   background-color: rgba(0, 0, 0, 0.3);
-  padding: 22px 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,12 +14,14 @@
 }
 
 .page-header__additional {
-  background: url("../../img/hand-phone.png") no-repeat bottom;
-  background-size: 320px 286px;
-  height: 375px;
   padding-top: 30px;
   padding-left: 30px;
-  padding-right: 20px;
+
+  &--index {
+    background: url("../../img/hand-phone.png") no-repeat bottom;
+    background-size: 320px 286px;
+    height: 375px;
+  }
 }
 
 .page-header__title {

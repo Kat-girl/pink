@@ -1,4 +1,9 @@
 @import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+// wrapper
+@import "blocks/wrapper.scss";
 
 // visually-hidden
 @import "visually-hidden.scss";
@@ -23,3 +28,6 @@
 
 // main
 @import "blocks/page-main.scss";
+@import "blocks/intro.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";

@@ -4,27 +4,26 @@
   top: 66px;
   left: 0;
   min-width: 320px;
-  background-color: #283645;
+  background-color: $color-major;
+
   &--opened {
     display: block;
   }
 }
 
 .navigation__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  @include list-style-clear;
 }
 
 .navigation__item {
   padding: 15px;
   text-align: center;
-  box-shadow: 0 1px 0 0 #000000,
-  0 1px 0 0 rgba(255, 255, 255, 0.15) inset;
+  box-shadow: 0 1px 0 0 $color-black,
+    0 1px 0 0 rgba(255, 255, 255, 0.15) inset;
 }
 
 .navigation__link {
-  color: #ffffff;
+  color: $color-white;
   font-size: 18px;
   line-height: 32px;
   text-transform: uppercase;

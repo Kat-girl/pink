@@ -1,0 +1,10 @@
+@mixin list-style-clear {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin padding-lr ($length) {
+  padding-left: $length;
+  padding-right: $length;
+}
