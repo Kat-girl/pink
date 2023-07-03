@@ -1,0 +1,50 @@
+.catalog {
+  padding-top: 54px;
+}
+
+.catalog__title {
+  @include padding-lr (20px, 20px);
+  margin: 0;
+  margin-bottom: 55px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.catalog__list {
+  @include list-style-clear;
+}
+
+.catalog__picture {
+  display: block;
+}
+
+.catalog__description-container {
+  background-color: #f2f2f2;
+  padding: 26px 10px 26px 17px;
+}
+
+.catalog__author {
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.catalog__time {
+  margin-left: 3px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
