@@ -38,7 +38,7 @@
   font-weight: 400;
   line-height: 24px;
 
-  @include padding-lr (15px);
+  @include padding-lr (15px, 15px);
 }
 
 .advantages__image-container {

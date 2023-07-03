@@ -1,5 +1,6 @@
 .reviews {
   padding-top: 50px;
+  padding-bottom: 20px;
   overflow: hidden;
 }
 
@@ -30,5 +31,5 @@
   line-height: 30px;
   margin: 0;
 
-  @include padding-lr(5px);
+  @include padding-lr(5px, 5px);
 }

@@ -1,0 +1,26 @@
+.tariffs {
+  background: url("../../img/grey-background.svg") no-repeat center bottom;
+  background-size: 320px 506px;
+
+  @include padding-tb (130px, 49px);
+}
+
+.tariffs__table-container {
+  position: relative;
+  width: 320px;
+  min-height: 308px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* Скрываем scrollbar для IE и Edge */
+  scrollbar-width: none;  /* Скрываем scrollbar для Firefox */
+
+  &::-webkit-scrollbar { /* Скрываем scrollbar для Chrome, Safari и Opera */
+    display: none;
+  }
+}
+
+.tariffs__table {
+  position: absolute;
+  left: -50%;
+  transform: translateX(-11%);
+  margin-bottom: 45px;
+}

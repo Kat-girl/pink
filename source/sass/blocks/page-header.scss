@@ -18,9 +18,9 @@
   padding-left: 30px;
 
   &--index {
-    background: url("../../img/hand-phone.png") no-repeat bottom;
-    background-size: 320px 286px;
-    height: 375px;
+    background: url("../../img/hand-phone.png") no-repeat left bottom;
+    background-size: 307px 273px;
+    height: 362px;
   }
 }
 
@@ -28,7 +28,7 @@
   margin: 0;
   margin-bottom: 34px;
   font-size: 24px;
-  line-height: 28px;
+  line-height: normal;
   font-weight: 300;
   text-align: center;
 }

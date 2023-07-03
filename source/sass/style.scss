@@ -11,6 +11,12 @@
 // buttons
 @import "buttons/toggle.scss";
 
+// slider
+@import "blocks/slider.scss";
+
+// table
+@import "blocks/table.scss";
+
 // html
 @import "blocks/page.scss";
 
@@ -26,8 +32,20 @@
 // navigation
 @import "blocks/navigation.scss";
 
-// main
+// social
+@import "blocks/social.scss";
+
+// main index
 @import "blocks/page-main.scss";
 @import "blocks/intro.scss";
 @import "blocks/advantages.scss";
 @import "blocks/reviews.scss";
+@import "blocks/tariffs.scss";
+@import "blocks/contacts.scss";
+
+// footer
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+
+// form
+@import "blocks/questionnaire.scss";

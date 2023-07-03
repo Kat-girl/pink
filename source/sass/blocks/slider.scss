@@ -1,0 +1,31 @@
+.slider__buttons-list {
+  @include list-style-clear;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.slider__buttons-item {
+  margin-right: 19px;
+  margin-bottom: 5px;
+}
+
+.slider__button {
+  @include button-style-clear;
+  @include sizes (10px, 10px);
+  border: none;
+  background-color: transparent;
+  display: flex;
+}
+
+.slider__icon-bullet {
+  fill: rgba(40, 54, 69, 0.3);
+  margin: auto;
+}
+
+.slider__button--current .slider__icon-bullet {
+  border-radius: 6px;
+  border: 3px solid $color-major;
+  fill: $color-white;
+}

@@ -1,0 +1,13 @@
+.page-footer {
+  @include padding-tb (40px, 40px);
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__logo {
+  margin-bottom: 41px;
+}
+
+.page-footer__social {
+  margin-bottom: 53px;
+}

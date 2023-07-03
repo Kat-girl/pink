@@ -1,0 +1,24 @@
+.social__list {
+  @include list-style-clear;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-bottom: 10px;
+}
+
+.social__link {
+  @include sizes (48px, 48px);
+  display: flex;
+  border-radius: 50%;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  background-color: $color-white;
+}
+
+.social__icon {
+  margin: auto;
+  fill: $color-pink;
+}

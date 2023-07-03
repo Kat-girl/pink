@@ -4,7 +4,22 @@
   padding: 0;
 }
 
-@mixin padding-lr ($length) {
-  padding-left: $length;
-  padding-right: $length;
+@mixin button-style-clear {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin padding-lr ($pl, $pr) {
+  padding-left: $pl;
+  padding-right: $pr;
+}
+
+@mixin padding-tb ($pt, $pb) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin sizes ($width, $height) {
+  width: $width;
+  height: $height;
 }
