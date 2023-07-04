@@ -11,6 +11,7 @@
 .post-yours__form {
   background-color: #f2f2f2;
   padding-top: 20px;
+  padding-bottom: 31px;
 }
 
 .post-yours__picture {
@@ -29,8 +30,17 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(40, 54, 69, 0.1);
+    content: "";
+  }
 }
 
 .instruments__item {
@@ -46,6 +56,10 @@
 
 .instruments__range-container {
   display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .instruments__button--current + .instruments__range-container {
@@ -57,7 +71,7 @@
   background-color: $color-major;
   position: absolute;
   bottom: 24px;
-  left: -102px;
+  left: 21px;
 }
 
 .instruments__range-button {
@@ -65,8 +79,31 @@
   @include sizes (14px, 14px);
   position: absolute;
   bottom: 19px;
-  right: -111px;
+  right: 46px;
   border-radius: 14px;
   border: 2px solid $color-pink;
   background-color: $color-white;
+}
+
+.post-yours__button {
+  @include button-style-clear;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  border: 3px solid $color-pink;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: transparent;
+  padding: 16px 50px;
+  width: 100%;
+
+  &--submit {
+    color: $color-pink;
+  }
+
+  &--cancel {
+    color: rgba(40, 54, 69, 0.1);
+    border-color: rgba(40, 54, 69, 0.1);
+  }
 }

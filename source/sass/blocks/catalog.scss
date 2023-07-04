@@ -26,6 +26,35 @@
   margin: auto;
 }
 
+.catalog__picture--panorama {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-color: $color-pink;
+    content: "ПАНОРАМА ДНЯ";
+    z-index: 1;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    height: 36px;
+    content: "";
+    color: $color-white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+}
+
 .catalog__description-container {
   background-color: #f2f2f2;
   padding: 26px 10px 25px 17px;

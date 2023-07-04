@@ -763,6 +763,33 @@
   margin: auto;
 }
 
+.catalog__picture--panorama {
+  position: relative;
+}
+.catalog__picture--panorama::before {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  height: 36px;
+  background-color: #d22856;
+  content: "ПАНОРАМА ДНЯ";
+  z-index: 1;
+}
+.catalog__picture--panorama::after {
+  position: absolute;
+  top: 0;
+  height: 36px;
+  content: "";
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
 .catalog__description-container {
   background-color: #f2f2f2;
   padding: 26px 10px 25px 17px;
@@ -826,6 +853,7 @@
 .post-yours__form {
   background-color: #f2f2f2;
   padding-top: 20px;
+  padding-bottom: 31px;
 }
 
 .post-yours__picture {
@@ -848,8 +876,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   position: relative;
+}
+.instruments__list::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(40, 54, 69, 0.1);
+  content: "";
 }
 
 .instruments__item {
@@ -866,6 +902,10 @@
 
 .instruments__range-container {
   display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .instruments__button--current + .instruments__range-container {
@@ -878,7 +918,7 @@
   background-color: #283645;
   position: absolute;
   bottom: 24px;
-  left: -102px;
+  left: 21px;
 }
 
 .instruments__range-button {
@@ -888,9 +928,31 @@
   height: 14px;
   position: absolute;
   bottom: 19px;
-  right: -111px;
+  right: 46px;
   border-radius: 14px;
   border: 2px solid #d22856;
   background-color: #ffffff;
+}
+
+.post-yours__button {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  border-radius: 30px;
+  border: 3px solid #d22856;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: transparent;
+  padding: 16px 50px;
+  width: 100%;
+}
+.post-yours__button--submit {
+  color: #d22856;
+}
+.post-yours__button--cancel {
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
 }
 /*# sourceMappingURL=style.css.map */
