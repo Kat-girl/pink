@@ -12,6 +12,7 @@
 @mixin fieldset-style-clear {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 @mixin padding-lr ($pl, $pr) {
