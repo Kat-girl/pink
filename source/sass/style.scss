@@ -1,12 +1,11 @@
-@import "fonts.scss";
-@import "variables.scss";
-@import "mixins.scss";
+// global
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
 
 // wrapper
 @import "blocks/wrapper.scss";
-
-// visually-hidden
-@import "visually-hidden.scss";
 
 // buttons
 @import "buttons/toggle.scss";
