@@ -56,20 +56,48 @@
   }
 }
 
+.page-header__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__additional {
+    padding-top: 114px;
+
+    &--index {
+      background: url("../../img/hand-phone-desktop.png") no-repeat bottom right;
+      background-size: 1050px 645px;
+      height: auto;
+    }
+  }
+
+  .page-header__container {
+    padding-left: 80px;
+  }
+}
+
 .page-header__title {
+  @include padding-lr (40px, 40px);
   margin: 0;
-  margin-bottom: 308px;
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    @include padding-lr (50px, 50px);
     width: 245px;
-    padding-left: 20px;
     margin-bottom: 39px;
-    color: #FFF;
     font-size: 40px;
     line-height: 120%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+    font-size: 50px;
+    line-height: normal;
   }
 }
