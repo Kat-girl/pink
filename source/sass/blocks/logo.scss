@@ -1,9 +1,31 @@
 .logo {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
-.logo__icon--glasses {
+.logo--short {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__link--glasses {
   margin-right: 15px;
+}
+
+.logo__icon {
+  display: block;
+}
+
+.page-header__logo--full .logo__icon {
+  fill: $color-white;
+}
+
+.page-footer__logo .logo__icon--glasses {
+  fill: $color-pink;
+}
+
+.page-footer__logo .logo__icon--name {
+  fill: $color-black;
 }
