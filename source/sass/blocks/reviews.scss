@@ -88,10 +88,22 @@
     margin-bottom: 51px;
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    @include padding-lr (100px, 100px);
+  }
 }
 
 .reviews__slider-buttons {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.reviews__slider-arrows {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

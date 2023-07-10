@@ -71,6 +71,10 @@
   padding: 23px 45px;
 }
 
+.slider {
+  position: relative;
+}
+
 .slider__buttons-list {
   list-style-type: none;
   margin: 0;
@@ -89,6 +93,8 @@
 .slider__button {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
   width: 10px;
   height: 10px;
   border: none;
@@ -107,9 +113,37 @@
   fill: #ffffff;
 }
 
+.slider__arrow {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+}
+
+.slider__arrow--left {
+  top: 20px;
+  left: 0;
+}
+
+.slider__arrow--right {
+  top: 20px;
+  right: 0;
+}
+
+.slider__arrow-icon {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 .table {
   width: 828px;
   border-collapse: collapse;
+}
+@media (min-width: 660px) {
+  .table {
+    width: 100%;
+  }
 }
 
 .table__header {
@@ -126,6 +160,10 @@
   text-transform: uppercase;
   padding: 8px 15px 20px;
   box-sizing: border-box;
+}
+
+.table__header__cell--hidden {
+  visibility: hidden;
 }
 
 .table__header__cell--ribboned {
@@ -147,6 +185,19 @@
   font-weight: 400;
   line-height: 30px;
   transform: rotate(-45deg);
+}
+
+.table__cell__text-only {
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: none;
+}
+@media (max-width: 659px) {
+  .table__cell__text-only {
+    display: none;
+  }
 }
 
 .table__header__title {
@@ -172,6 +223,18 @@
   padding-top: 14px;
   padding-bottom: 14px;
 }
+@media (min-width: 660px) {
+  .table__cell {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+@media (min-width: 660px) {
+  .table__cell__text {
+    display: none;
+  }
+}
 
 .table__cell__picture {
   position: absolute;
@@ -179,6 +242,12 @@
 }
 .table__cell__picture--yes {
   right: 17px;
+}
+@media (min-width: 660px) {
+  .table__cell__picture {
+    right: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .page {
@@ -901,10 +970,25 @@
     font-size: 18px;
   }
 }
+@media (min-width: 1200px) {
+  .reviews__text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 
 @media (min-width: 1200px) {
   .reviews__slider-buttons {
     display: none;
+  }
+}
+
+.reviews__slider-arrows {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .reviews__slider-arrows {
+    display: block;
   }
 }
 
@@ -917,7 +1001,10 @@
 
 .tariffs__table-container {
   position: relative;
-  width: 320px;
+  width: 100%;
+  max-width: 920px;
+  box-sizing: border-box;
+  margin: auto;
   min-height: 308px;
   overflow-x: scroll;
   -ms-overflow-style: none;
@@ -929,12 +1016,30 @@
   /* Скрываем scrollbar для Chrome, Safari и Opera */
   display: none;
 }
+@media (min-width: 660px) {
+  .tariffs__table-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 .tariffs__table {
   position: absolute;
   left: -50%;
   transform: translateX(-11%);
   margin-bottom: 45px;
+}
+@media (min-width: 660px) {
+  .tariffs__table {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .tariffs__slider-buttons {
+    display: none;
+  }
 }
 
 .contacts {
@@ -1294,6 +1399,8 @@
 .catalog__button-like {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -1369,6 +1476,8 @@
 .instruments__button {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
   border: none;
 }
 
@@ -1396,6 +1505,8 @@
 .instruments__range-button {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
   width: 14px;
   height: 14px;
   position: absolute;
@@ -1409,6 +1520,8 @@
 .post-yours__button {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
   margin-bottom: 12px;
   border-radius: 30px;
   border: 3px solid #d22856;

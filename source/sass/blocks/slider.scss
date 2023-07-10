@@ -1,3 +1,7 @@
+.slider {
+  position: relative;
+}
+
 .slider__buttons-list {
   @include list-style-clear;
   display: flex;
@@ -28,4 +32,24 @@
   border-radius: 6px;
   border: 3px solid $color-major;
   fill: $color-white;
+}
+
+.slider__arrow {
+  @include button-style-clear;
+  position: absolute;
+}
+
+.slider__arrow--left {
+  top: 20px;
+  left: 0;
+}
+
+.slider__arrow--right {
+  top: 20px;
+  right: 0;
+}
+
+.slider__arrow-icon {
+  fill: $color-major;
+  opacity: 0.3;
 }

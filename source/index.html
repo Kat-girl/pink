@@ -179,6 +179,16 @@
               </button>
             </li>
           </ul>
+          <div class="slider__arrows reviews__slider-arrows">
+            <button class="slider__arrow--left slider__arrow" type="button">
+              <svg class="slider__arrow-icon" width="22" height="41" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m2.04 20.5 19.7-19.09A.82.82 0 0 0 22 .83a.8.8 0 0 0-.25-.59.86.86 0 0 0-.61-.24.88.88 0 0 0-.6.24L.24 19.91a.83.83 0 0 0-.25.59.81.81 0 0 0 .25.59l20.28 19.67a.9.9 0 0 0 1.09.1c.14-.1.25-.22.31-.38a.8.8 0 0 0-.18-.9L2.05 20.5Z"/></svg>
+              <span class="visually-hidden">Пролистать влево</span>
+            </button>
+            <button class="slider__arrow--right slider__arrow" type="button">
+              <svg class="slider__arrow-icon" width="22" height="41" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="M19.96 20.5.26 39.59a.82.82 0 0 0-.26.58.8.8 0 0 0 .25.59.86.86 0 0 0 .61.24.88.88 0 0 0 .6-.24l20.29-19.67a.83.83 0 0 0 .25-.59.81.81 0 0 0-.25-.59L1.47.24A.9.9 0 0 0 .38.14a.84.84 0 0 0-.31.37.8.8 0 0 0 .18.9l19.7 19.09Z"/></svg>
+              <span class="visually-hidden">Пролистать вправо</span>
+            </button>
+          </div>
         </div>
       </section>
       <section class="tariffs">
@@ -188,6 +198,8 @@
             <table class="table tariffs__table">
               <thead class="table__header">
                 <tr>
+                  <th class="table__header__cell--hidden">
+                  </th>
                   <th class="table__header__cell">
                     <span class="table__header__title">База</span><br>
                     <b class="table__header__price">1,99 USD</b>
@@ -204,43 +216,61 @@
               </thead>
               <tbody class="table__body">
                 <tr>
-                  <td class="table__cell">Розовый фильтр
+                  <td class="table__cell">
+                    <span class="table__cell__text-only">Розовый фильтр</span>
+                  </td>
+                  <td class="table__cell">
+                    <span class="table__cell__text">Розовый фильтр</span>
                     <img class="table__cell__picture table__cell__picture--yes" src="img/yes.svg" alt="Да.">
                     <span class="visually-hidden">есть</span>
                   </td>
-                  <td class="table__cell">Розовый фильтр
+                  <td class="table__cell">
+                    <span class="table__cell__text">Розовый фильтр</span>
                     <img class="table__cell__picture table__cell__picture--yes" src="img/yes.svg" alt="Да.">
                     <span class="visually-hidden">есть</span>
                   </td>
-                  <td class="table__cell">Розовый фильтр
-                    <img class="table__cell__picture table__cell__picture--yes" src="img/yes.svg" alt="Да.">
-                    <span class="visually-hidden">есть</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="table__cell">Смайлики
-                    <img class="table__cell__picture table__cell__picture--no" src="img/no.svg" alt="Нет.">
-                    <span class="visually-hidden">нет</span>
-                  </td>
-                  <td class="table__cell">Смайлики
-                    <img class="table__cell__picture table__cell__picture--yes" src="img/yes.svg" alt="Да.">
-                    <span class="visually-hidden">есть</span>
-                  </td>
-                  <td class="table__cell">Смайлики
+                  <td class="table__cell">
+                    <span class="table__cell__text">Розовый фильтр</span>
                     <img class="table__cell__picture table__cell__picture--yes" src="img/yes.svg" alt="Да.">
                     <span class="visually-hidden">есть</span>
                   </td>
                 </tr>
                 <tr>
-                  <td class="table__cell">Комментарии
+                  <td class="table__cell">
+                    <span class="table__cell__text-only">Смайлики</span>
+                  </td>
+                  <td class="table__cell">
+                    <span class="table__cell__text">Смайлики</span>
                     <img class="table__cell__picture table__cell__picture--no" src="img/no.svg" alt="Нет.">
                     <span class="visually-hidden">нет</span>
                   </td>
-                  <td class="table__cell">Комментарии
+                  <td class="table__cell">
+                    <span class="table__cell__text">Смайлики</span>
+                    <img class="table__cell__picture table__cell__picture--yes" src="img/yes.svg" alt="Да.">
+                    <span class="visually-hidden">есть</span>
+                  </td>
+                  <td class="table__cell">
+                    <span class="table__cell__text">Смайлики</span>
+                    <img class="table__cell__picture table__cell__picture--yes" src="img/yes.svg" alt="Да.">
+                    <span class="visually-hidden">есть</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__cell">
+                    <span class="table__cell__text-only">Комментарии</span>
+                  </td>
+                  <td class="table__cell">
+                    <span class="table__cell__text">Комментарии</span>
                     <img class="table__cell__picture table__cell__picture--no" src="img/no.svg" alt="Нет.">
                     <span class="visually-hidden">нет</span>
                   </td>
-                  <td class="table__cell">Комментарии
+                  <td class="table__cell">
+                    <span class="table__cell__text">Комментарии</span>
+                    <img class="table__cell__picture table__cell__picture--no" src="img/no.svg" alt="Нет.">
+                    <span class="visually-hidden">нет</span>
+                  </td>
+                  <td class="table__cell">
+                    <span class="table__cell__text">Комментарии</span>
                     <img class="table__cell__picture table__cell__picture--yes" src="img/yes.svg" alt="Да.">
                     <span class="visually-hidden">есть</span>
                   </td>
@@ -249,7 +279,7 @@
             </table>
           </div>
 
-          <ul class="slider__buttons-list">
+          <ul class="slider__buttons-list tariffs__slider-buttons">
             <li class="slider__buttons-item">
               <button class="slider__button" type="button">
                 <svg class="slider__icon-bullet" width="6" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3" r="3"/></svg>

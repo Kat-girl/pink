@@ -7,6 +7,8 @@
 @mixin button-style-clear {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 @mixin fieldset-style-clear {
