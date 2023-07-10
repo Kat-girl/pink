@@ -1,6 +1,7 @@
 .wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
 
   @media (min-width: $desktop-width) {
     max-width: 960px;

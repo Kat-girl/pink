@@ -37,6 +37,7 @@
 .wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  overflow: hidden;
 }
 @media (min-width: 1200px) {
   .wrapper {
@@ -490,6 +491,11 @@
   background: url("../../img/grey-background.svg") no-repeat center bottom;
   background-size: 320px 894px;
 }
+@media (min-width: 1200px) {
+  .advantages {
+    padding-bottom: 59px;
+  }
+}
 
 .advantages__slogans-container {
   margin-bottom: 123px;
@@ -534,8 +540,8 @@
   .advantages__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     row-gap: 59px;
+    align-items: start;
   }
 
   .advantages__slogan:last-of-type {
@@ -571,6 +577,11 @@
 @media (min-width: 660px) {
   .advantages__item {
     margin-bottom: 47px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages__item {
+    margin-bottom: 0;
   }
 }
 
@@ -619,6 +630,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -700,10 +712,119 @@
   }
 }
 
+.extra-info {
+  padding-top: 100px;
+  padding-left: 310px;
+  padding-bottom: 30px;
+  position: relative;
+}
+@media (max-width: 659px) {
+  .extra-info {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .extra-info {
+    background-color: #f2f2f2;
+    padding-left: 500px;
+    padding-top: 115px;
+    padding-bottom: 120px;
+  }
+}
+
+.extra-info::before {
+  position: absolute;
+  top: 54px;
+  left: 20px;
+  content: url("../../img/timer-tablet.svg");
+}
+@media (min-width: 1200px) {
+  .extra-info::before {
+    top: 17px;
+    left: 131px;
+    content: url("../../img/timer-desktop.svg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .extra-info__container {
+    width: 534px;
+  }
+}
+
+.extra-info__title {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align-last: left;
+}
+@media (min-width: 1200px) {
+  .extra-info__title {
+    line-height: 30px;
+    margin-bottom: 37px;
+  }
+}
+
+.extra-info__text {
+  margin: 0;
+  margin-bottom: 25px;
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align-last: left;
+}
+@media (min-width: 1200px) {
+  .extra-info__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 47px;
+  }
+}
+
+.extra-info__link {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+@media (min-width: 1200px) {
+  .extra-info__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
 .reviews {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 20px;
   overflow: hidden;
+}
+@media (min-width: 660px) {
+  .reviews {
+    padding-top: 109px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    padding-top: 193px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews::before {
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: url("../../img/quotes.svg");
+  }
 }
 
 .reviews__list {
@@ -711,12 +832,19 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 280px);
+  grid-template-columns: repeat(3, 100%);
   column-gap: 20px;
 }
 
 .reviews__item {
   margin-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 660px) {
+  .reviews__item {
+    margin-bottom: 49px;
+  }
 }
 
 .reviews__author {
@@ -728,6 +856,36 @@
   margin: 0;
   margin-bottom: 31px;
 }
+@media (min-width: 660px) {
+  .reviews__author {
+    order: 2;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__author {
+    font-size: 24px;
+  }
+}
+
+.reviews__author-info {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+@media (max-width: 659px) {
+  .reviews__author-info {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews__author-info {
+    font-size: 18px;
+  }
+}
 
 .reviews__text {
   text-align: center;
@@ -736,6 +894,18 @@
   margin: 0;
   padding-left: 5px;
   padding-right: 5px;
+}
+@media (min-width: 660px) {
+  .reviews__text {
+    margin-bottom: 51px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews__slider-buttons {
+    display: none;
+  }
 }
 
 .tariffs {
