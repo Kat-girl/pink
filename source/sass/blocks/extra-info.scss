@@ -1,24 +1,28 @@
 .extra-info {
-  padding-top: 100px;
-  padding-left: 310px;
-  padding-bottom: 30px;
-  position: relative;
-
   @media (max-width: $mobile-only) {
     display: none;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $color-grey;
-    padding-left: 500px;
+  }
+}
+
+.extra-info__wrapper {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  max-width: 960px;
+
+  @media (min-width: $desktop-width) {
     padding-top: 115px;
     padding-bottom: 120px;
   }
 }
 
-.extra-info::before {
+.extra-info__wrapper::before {
   position: absolute;
-  top: 54px;
+  bottom: 0;
   left: 20px;
   content: url("../../img/timer-tablet.svg");
 
@@ -30,8 +34,11 @@
 }
 
 .extra-info__container {
+  margin-left: 310px;
+
   @media (min-width: $desktop-width) {
     width: 534px;
+    margin-left: 500px;
   }
 }
 

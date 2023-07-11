@@ -72,7 +72,7 @@
     align-self: self-start;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 130px;
+    column-gap: 68px;
   }
 }
 
@@ -85,6 +85,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+
+    @include padding-lr (45px, 45px);
   }
 }
 
