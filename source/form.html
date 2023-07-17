@@ -94,34 +94,34 @@
               <fieldset class="form__fieldset form__achievements">
                 <legend class="form__legend">Ваши безбашенные
                   достижения в путешествии</legend>
-                  <ul class="form__list">
-                    <li class="form__item">
+                  <ul class="form__list form__list--checkbox">
+                    <li class="form__item form__item--sharks">
                       <label class="form__label--checkbox" for="selfie-with-sharks">Сделал селфи с акулой</label>
                       <input class="visually-hidden" type="checkbox" id="selfie-with-sharks" name="selfie-with-sharks" checked>
                       <span class="form__checkbox"></span>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--sunburn">
                       <label class="form__label--checkbox" for="sunburn-at-the-beach">Обгорел на пляже</label>
                       <input class="visually-hidden" type="checkbox" id="sunburn-at-the-beach" name="sunburn-at-the-beach" checked>
                       <span class="form__checkbox"></span>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--norris">
                       <label class="form__label--checkbox" for="saw-chuck-norris">Видел Чака Норриса</label>
                       <input class="visually-hidden" type="checkbox" id="saw-chuck-norris" name="saw-chuck-norris">
                       <span class="form__checkbox"></span>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--gifts">
                       <label class="form__label--checkbox" for="bought-gifts">Накупил сувениров</label>
                       <input class="visually-hidden" type="checkbox" id="bought-gifts" name="bought-gifts" >
                       <span class="form__checkbox"></span>
                     </li>
-                    <li class="form__item">
+                    <li class="form__item form__item--tower">
                       <label class="form__label--checkbox" for="held-the-tower">Удержал башню</label>
                       <input class="visually-hidden" type="checkbox" id="held-the-tower" name="held-the-tower" checked>
                       <span class="form__checkbox"></span>
                     </li>
                     <li class="form__item">
-                      <label class="form__label--checkbox" for="ruined-the-hotel">Разгромил отель</label>
+                      <label class="form__label--checkbox form__item--hotel" for="ruined-the-hotel">Разгромил отель</label>
                       <input class="visually-hidden" type="checkbox" id="ruined-the-hotel" name="ruined-the-hotel">
                       <span class="form__checkbox"></span>
                     </li>
@@ -130,12 +130,16 @@
                 <fieldset class="form__fieldset form__contacts">
                   <legend class="form__legend form__legend--contacts">контактная информация</legend>
                   <div class="wrapper">
-                    <div class="form__input-group form__input-group--contacts">
-                      <label class="form__label form__label--contacts" for="phone">НОМЕР ТЕЛЕФОНА</label>
-                      <input class="form__input form__input--contacts" type="number" id="phone" name="phone" placeholder="Номер, пожалуйста"></div>
+                    <div class="form__contacts-container">
                       <div class="form__input-group form__input-group--contacts">
-                        <label class="form__label form__label--contacts" for="first-name">АДРЕС ПОЧТЫ</label>
-                        <input class="form__input form__input--contacts" type="email" required id="email" name="email" placeholder="Введите почту *"></div>
+                        <label class="form__label form__label--contacts" for="phone">НОМЕР ТЕЛЕФОНА</label>
+                        <input class="form__input form__input--contacts" type="number" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                      </div>
+                        <div class="form__input-group form__input-group--contacts">
+                          <label class="form__label form__label--contacts" for="first-name">АДРЕС ПОЧТЫ</label>
+                          <input class="form__input form__input--contacts" type="email" required id="email" name="email" placeholder="Введите почту *">
+                        </div>
+                      </div>
                   </div>
                 </fieldset>
               <fieldset class="form__fieldset form__app">
@@ -166,13 +170,10 @@
                   </div>
                 </fieldset>
                 <div class="button-container">
-                  <div class="wrapper">
-                    <button class="button form__button" type="submit">Отправить форму</button></div>
+                    <button class="button form__button" type="submit">Отправить форму</button>
                 </div>
                 <div class="questionnaire__note-container">
-                  <div class="wrapper">
-                    <p class="questionnaire__note note"><span class="questionnaire__note-asterix">*</span> — обязательные поля</p>
-                  </div>
+                    <p class="questionnaire__note note"><span class="questionnaire__note-asterix">*</span> — обязательные<span class="questionnaire__note--extra"> для заполнения</span> поля</p>
                 </div>
               </div>
           </form>

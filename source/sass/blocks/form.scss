@@ -23,6 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include padding-lr (0, 0);
     grid-column: span 1;
   }
 }
@@ -114,6 +115,11 @@
     margin-right: 22px;
     margin-bottom: 51px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .form__legend {
@@ -150,6 +156,14 @@
   @include list-style-clear;
 }
 
+.form__list--checkbox {
+  display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .form__item {
   position: relative;
   margin-bottom: 47px;
@@ -157,6 +171,18 @@
 
 .form__item:last-of-type {
   margin-bottom: 44px;
+}
+
+.form__item--sunburn {
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+  }
+}
+
+.form__item--gifts {
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+  }
 }
 
 .form__checkbox {
@@ -204,6 +230,14 @@
     grid-row: 2 / 3;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+.form__contacts-container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 74px;
   }
 }
 
@@ -273,7 +307,7 @@
   @media (min-width: $tablet-width) {
     @include padding-lr (40px, 40px);
     padding-top: 0;
-    padding-bottom: 53px;
+    padding-bottom: 23px;
     border-radius: 1px;
     border: 2px solid $color-dark-grey;
     margin-left: 22px;
@@ -281,11 +315,18 @@
     margin-bottom: 70px;
     grid-column: span 2;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .form__input-textarea {
   transform: translateY(22px);
   min-height: 197px;
+  width: 100%;
+  margin-bottom: 52px;
 
   &::placeholder {
     color: $color-major;
@@ -293,6 +334,10 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 189px;
   }
 }
 

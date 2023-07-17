@@ -38,8 +38,14 @@
 }
 
 .questionnaire__note-container {
+  @include padding-lr (20px, 20px);
+
   @media (min-width: $tablet-width) {
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include padding-lr (0, 0);
   }
 }
 
@@ -57,4 +63,12 @@
 
 .questionnaire__note-asterix {
   color: $color-pink;
+}
+
+.questionnaire__note--extra {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }

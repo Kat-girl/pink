@@ -1,3 +1,15 @@
+.button-container {
+  @include padding-lr (20px, 20px);
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include padding-lr (0, 0);
+  }
+}
+
 .button {
   border-radius: 1px;
   border: 2px solid $color-green;
@@ -7,5 +19,6 @@
   font-weight: 700;
   line-height: 10px;
   text-transform: uppercase;
-  padding: 23px 35px;
+  padding: 23px;
+  max-width: 296px;
 }
