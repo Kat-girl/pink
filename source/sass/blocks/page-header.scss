@@ -39,6 +39,10 @@
     height: 664px;
   }
 
+  &--form {
+    padding-bottom: 51px;
+  }
+
   &--catalog {
     padding-bottom: 50px;
   }
@@ -74,6 +78,10 @@
       background-size: 1050px 645px;
       height: auto;
     }
+
+    &--form {
+      padding-bottom: 75px;
+    }
   }
 
   .page-header__container {
@@ -101,6 +109,17 @@
     margin-bottom: 51px;
     font-size: 50px;
     line-height: normal;
+  }
+}
+
+.page-header__title--form {
+  @media (min-width: $tablet-width) {
+    @include padding-lr (70px, 70px);
+    width: auto;
+    font-size: 50px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 24px;
   }
 }
 

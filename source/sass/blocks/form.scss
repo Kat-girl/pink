@@ -1,3 +1,11 @@
+.form {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .form__fieldset {
   @include fieldset-style-clear;
   border: none;
@@ -7,6 +15,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+  }
 }
 
 .form__label {
@@ -17,13 +29,33 @@
   text-transform: uppercase;
   margin-left: 23px;
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+
+.form__label--contacts {
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.form__input-group--contacts {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    margin-bottom: 35px;
+  }
 }
 
 .form__input {
   border-radius: 1px;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
-  width: 276px;
+  width: 100%;
 
   @include padding-tb (20px, 20px);
   padding-left: 20px;
@@ -38,9 +70,44 @@
   }
 }
 
+.form__input--last-name {
+  @media (min-width: $tablet-width) {
+    width: 521px;
+  }
+}
+
+.form__input--first-name {
+  @media (min-width: $tablet-width) {
+    width: 561px;
+  }
+}
+
+.form__input--middle-name {
+  @media (min-width: $tablet-width) {
+    width: 521px;
+  }
+}
+
+.form__input--contacts {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
+}
+
 .form__achievements {
-  background-color: #f2f2f2;
+  background-color: $color-grey;
   padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 2;
+    background-color: $color-white;
+    padding-top: 0;
+    border-radius: 1px;
+    border: 2px solid $color-dark-grey;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 51px;
+  }
 }
 
 .form__legend {
@@ -53,6 +120,24 @@
   text-transform: uppercase;
   margin-bottom: 44px;
   transform: translateY(47px);
+
+  @media (min-width: $tablet-width) {
+    @include padding-lr (25px, 25px);
+    margin-bottom: 35px;
+    transform: none;
+  }
+}
+
+.form__legend--contacts {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}
+
+.form__legend--emotions {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .form__list {
@@ -74,8 +159,12 @@
   left: 22px;
   top: -3px;
   border-radius: 1px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $color-dark-grey;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    left: 60px;
+  }
 }
 
 .form__label--checkbox {
@@ -84,15 +173,43 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 120px;
+  }
 }
 
 .form__contacts {
   padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    @include padding-lr (40px, 40px);
+    grid-row: 3 / 4;
+    grid-column: span 2;
+    border-radius: 1px;
+    border: 2px solid $color-dark-grey;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 51px;
+    padding-top: 0;
+  }
 }
 
 .form__app {
   background-color: #f2f2f2;
   padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: span 2;
+    background-color: $color-white;
+    padding-top: 0;
+    border-radius: 1px;
+    border: 2px solid #e5e5e5;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 51px;
+  }
 }
 
 .form__item-radio {
@@ -110,6 +227,10 @@
   line-height: 30px;
   text-transform: none;
   padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 120px;
+  }
 }
 
 .form__radio {
@@ -120,14 +241,30 @@
   border-radius: 50%;
   border: 2px solid #e5e5e5;
   background-color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    left: 60px;
+  }
 }
 
 .form__emotions {
-  padding-top: 42px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    @include padding-lr (40px, 40px);
+    padding-top: 0;
+    padding-bottom: 53px;
+    border-radius: 1px;
+    border: 2px solid $color-dark-grey;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 70px;
+    grid-column: span 2;
+  }
 }
 
 .form__input-textarea {
+  transform: translateY(22px);
   min-height: 197px;
 
   &::placeholder {
@@ -140,5 +277,10 @@
 }
 
 .form__button {
+  width: 100%;
   margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }

@@ -2,7 +2,7 @@
   @include padding-tb (40px, 40px);
 
   @media (min-width: $desktop-width) {
-    @include padding-tb (100px, 100px);
+    @include padding-lr (100px, 100px);
   }
 }
 
