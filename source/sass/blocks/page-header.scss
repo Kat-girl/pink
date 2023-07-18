@@ -90,7 +90,6 @@
 }
 
 .page-header__title {
-  @include padding-lr (40px, 40px);
   margin: 0;
   font-size: 24px;
   line-height: normal;
@@ -98,8 +97,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    @include padding-lr (50px, 50px);
-    width: 245px;
     margin-bottom: 39px;
     font-size: 40px;
     line-height: 120%;
@@ -112,6 +109,15 @@
   }
 }
 
+.page-header__title--index {
+  @include padding-lr (40px, 40px);
+
+  @media (min-width: $tablet-width) {
+    @include padding-lr (50px, 50px);
+    width: 245px;
+  }
+}
+
 .page-header__title--form {
   @media (min-width: $tablet-width) {
     @include padding-lr (70px, 70px);
@@ -120,6 +126,23 @@
     font-style: normal;
     line-height: normal;
     margin-bottom: 24px;
+  }
+}
+
+.page-header__title--catalog {
+  padding-bottom: 80px;
+
+  @media (min-width: $tablet-width) {
+    @include padding-lr (100px, 100px);
+    padding-top: 80px;
+    padding-bottom: 143px;
+    font-size: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include padding-lr (200px, 200px);
+    padding-top: 74px;
+    padding-bottom: 104px;
   }
 }
 
