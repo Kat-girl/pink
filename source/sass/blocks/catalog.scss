@@ -4,6 +4,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
   }
 }
 
@@ -30,35 +35,23 @@
 
 .catalog__list {
   @include list-style-clear;
-  @include padding-lr (20px, 20px);
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.catalog__item--pic-of-the-day {
-  @media (min-width: $tablet-width) {
-    grid-column: span 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-column: span 3;
+    gap: 50px;
   }
 }
 
 .catalog__picture {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .catalog__picture--panorama {
+  max-width: 1200px;
+  margin: auto;
   position: relative;
 
   &::before {
@@ -132,4 +125,26 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.catalog__inner-wrapper {
+  @include padding-lr (20px, 20px);
+  max-width: 940px;
+  margin: auto;
+}
+
+.catalog__wrapper {
+  @include padding-lr (20px, 20px);
+  max-width: 940px;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
