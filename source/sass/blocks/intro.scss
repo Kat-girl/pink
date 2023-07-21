@@ -24,6 +24,15 @@
   line-height: 18px;
   padding: 16px 14px;
   margin-bottom: 32px;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-pink;
+  }
+
+  &:active {
+    color: lighten($color: $color-pink, $amount: 30%);
+  }
 }
 
 .intro__list {

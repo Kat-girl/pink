@@ -1,5 +1,6 @@
 .page-header {
-  background: #1d2631 url("../../img/header-bg.jpg");
+  background: #1d2631 url("../../img/header-bg.jpg") no-repeat center center;
+  background-size: cover;
   color: $color-white;
 }
 
@@ -14,6 +15,10 @@
   }
 }
 
+.page-header__logo {
+  margin-right: 170px;
+}
+
 .page-header__main--nav-opened {
   background-color: $color-major;
 }
@@ -26,8 +31,8 @@
 
 .page-header__main-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__logo--full {

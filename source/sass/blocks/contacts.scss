@@ -75,6 +75,14 @@
   font-weight: 300;
   line-height: 18px;
   text-decoration: none;
+
+  &[href]:hover {
+    color: $color-major;
+  }
+
+  &[href]:active {
+    color: lighten($color: $color-major, $amount: 30%);
+  }
 }
 
 .contacts__address {

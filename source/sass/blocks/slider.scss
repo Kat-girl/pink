@@ -13,25 +13,41 @@
 .slider__buttons-item {
   margin-right: 19px;
   margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .slider__button {
   @include button-style-clear;
-  @include sizes (10px, 10px);
+  @include sizes (6px, 6px);
+  border-radius: 50%;
   border: none;
-  background-color: transparent;
+  background-color: rgba(40, 54, 69, 0.3);
   display: flex;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
 }
 
-.slider__icon-bullet {
-  fill: rgba(40, 54, 69, 0.3);
-  margin: auto;
-}
-
-.slider__button--current .slider__icon-bullet {
-  border-radius: 6px;
+.slider__button--current {
+  @include sizes (6px, 6px);
+  border-radius: 50%;
+  background-color: $color-white;
   border: 3px solid $color-major;
-  fill: $color-white;
+  box-sizing: content-box;
+
+  &:hover {
+    background-color: inherit;
+  }
+
+  &:active {
+    background-color: inherit;
+  }
 }
 
 .slider__arrow {
