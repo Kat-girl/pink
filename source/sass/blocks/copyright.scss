@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    max-width: 130px;
+  }
 }
 
 .copyright__text {

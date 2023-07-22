@@ -2,6 +2,14 @@
   @include list-style-clear;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    max-width: 205px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 405px;
+  }
 }
 
 .social__item {
