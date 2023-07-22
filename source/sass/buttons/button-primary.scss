@@ -21,4 +21,22 @@
   text-transform: uppercase;
   padding: 23px;
   max-width: 296px;
+
+  &:hover {
+    border: 2px solid #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    border: 2px solid $color-dark-grey;
+    background: $color-dark-grey;
+
+    &:active {
+      color: $color-white;
+    }
+  }
 }

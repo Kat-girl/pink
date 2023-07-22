@@ -109,6 +109,43 @@
   }
 }
 
+.form__input--radio:hover + .form__radio,
+.form__radio:hover {
+  border-color: $color-major;
+}
+
+.form__input--radio:active + .form__radio,
+.form__radio:active {
+  border-color: $color-pink;
+}
+
+.form__input--radio:checked + .form__radio::before {
+  @include sizes (15px, 15px);
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  border-radius: 50%;
+  background-color: $color-pink;
+  content: "";
+}
+
+.form__input--checkbox:hover + .form__checkbox,
+.form__checkbox:hover {
+  border-color: $color-major;
+}
+
+.form__input--checkbox:active + .form__checkbox,
+.form__checkbox:active {
+  border-color: $color-pink;
+}
+
+.form__input--checkbox:checked + .form__checkbox::before {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  content: url("../../img/tick.svg");
+}
+
 .form__achievements {
   background-color: $color-grey;
   padding-top: 42px;
@@ -335,6 +372,11 @@
   min-height: 197px;
   width: 100%;
   margin-bottom: 52px;
+  color: $color-major;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
 
   &::placeholder {
     color: $color-major;
@@ -354,6 +396,6 @@
   margin-bottom: 46px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
 }
