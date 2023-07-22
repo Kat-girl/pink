@@ -42,11 +42,11 @@
   box-sizing: content-box;
 
   &:hover {
-    background-color: inherit;
+    background-color: $color-white;
   }
 
   &:active {
-    background-color: inherit;
+    background-color: $color-white;
   }
 }
 
@@ -68,4 +68,14 @@
 .slider__arrow-icon {
   fill: $color-major;
   opacity: 0.3;
+}
+
+.slider__arrow:hover .slider__arrow-icon {
+  fill: $color-major;
+  opacity: 0.6;
+}
+
+.slider__arrow:active .slider__arrow-icon {
+  fill: $color-major;
+  opacity: 0.1;
 }

@@ -47,8 +47,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
-    margin-right: 48px;
-    margin-left: 48px;
+    margin-right: 38px;
+    margin-left: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }
 

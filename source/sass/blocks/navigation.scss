@@ -8,12 +8,16 @@
 
 .navigation__toggle {
   position: relative;
-  right: 0;
+  right: 20px;
   background-color: transparent;
   width: 50px;
   height: 24px;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    right: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
