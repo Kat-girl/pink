@@ -315,7 +315,7 @@
   display: block;
 }
 
-.page-header__logo--full .logo__icon {
+.page-header__logo .logo__icon {
   fill: #ffffff;
 }
 
@@ -628,6 +628,7 @@
     top: 70px;
     left: 0;
     right: 0;
+    z-index: 1;
   }
 }
 @media (max-width: 1023px) and (min-width: 660px) {
@@ -1740,6 +1741,12 @@
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+}
+.form__input:hover {
+  border-color: #283645;
+}
+.form__input:active {
+  border-color: #d22856;
 }
 .form__input::placeholder {
   color: #283645;

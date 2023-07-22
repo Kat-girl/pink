@@ -79,12 +79,20 @@
 
 .form__input {
   border-radius: 1px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $color-dark-grey;
   box-sizing: border-box;
   flex-grow: 1;
 
   @include padding-tb (20px, 20px);
   padding-left: 20px;
+
+  &:hover {
+    border-color: $color-major;
+  }
+
+  &:active {
+    border-color: $color-pink;
+  }
 
   &::placeholder {
     color: $color-major;
