@@ -119,6 +119,11 @@
   border-color: $color-pink;
 }
 
+.form__input--radio:focus + .form__radio,
+.form__radio:focus {
+  border-color: $color-major;
+}
+
 .form__input--radio:checked + .form__radio::before {
   @include sizes (15px, 15px);
   position: absolute;
@@ -137,6 +142,11 @@
 .form__input--checkbox:active + .form__checkbox,
 .form__checkbox:active {
   border-color: $color-pink;
+}
+
+.form__input--checkbox:focus + .form__checkbox,
+.form__checkbox:focus {
+  border-color: $color-major;
 }
 
 .form__input--checkbox:checked + .form__checkbox::before {

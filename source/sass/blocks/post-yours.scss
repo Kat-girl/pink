@@ -122,23 +122,49 @@
   display: block;
 }
 
-.instruments__range-scale {
+.instruments__range-input {
   @include sizes (240px, 2px);
-  background-color: $color-major;
-  position: absolute;
-  bottom: 24px;
-  left: 21px;
-}
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
 
-.instruments__range-button {
-  @include button-style-clear;
-  @include sizes (14px, 14px);
-  position: absolute;
-  bottom: 19px;
-  right: 46px;
-  border-radius: 14px;
-  border: 2px solid $color-pink;
-  background-color: $color-white;
+  &::-webkit-slider-runnable-track {
+    @include sizes (240px, 2px);
+    background-color: $color-major;
+    position: absolute;
+    bottom: 24px;
+    left: 21px;
+  }
+
+  &::-webkit-slider-thumb {
+    @include sizes (14px, 14px);
+    border: 2px solid $color-pink;
+    border-radius: 50%;
+    background-color: $color-white;
+    --webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  &::-moz-range-track {
+    @include sizes (240px, 2px);
+    background-color: $color-major;
+    position: absolute;
+    bottom: 24px;
+    left: 21px;
+  }
+
+  &::-moz-range-thumb {
+    @include sizes (14px, 14px);
+    border: 2px solid $color-pink;
+    border-radius: 50%;
+    background-color: $color-white;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
 }
 
 .post-yours__button {
