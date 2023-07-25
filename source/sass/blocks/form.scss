@@ -209,7 +209,7 @@
 
 .form__list {
   @include list-style-clear;
-  padding-left: 20px;
+  padding-left: 20px;  //Добавлен, чтобы при переполнении контентом был отступ от левого края
 }
 
 .form__list--checkbox {
@@ -244,26 +244,26 @@
 .form__checkbox {
   @include sizes (35px, 35px);
   position: absolute;
-  left: 22px;
+  left: 2px;
   top: -3px;
   border-radius: 1px;
   border: 2px solid $color-dark-grey;
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    left: 60px;
+    left: 40px;
   }
 }
 
 .form__label--checkbox {
-  padding-left: 80px;
+  padding-left: 60px;
   color: $color-major;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 120px;
+    padding-left: 100px;
   }
 }
 
@@ -336,24 +336,24 @@
   font-weight: 400;
   line-height: 30px;
   text-transform: none;
-  padding-left: 70px;
+  padding-left: 50px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 120px;
+    padding-left: 100px;
   }
 }
 
 .form__radio {
   @include sizes (37px, 37px);
   position: absolute;
-  left: 22px;
+  left: 2px;
   top: -3px;
   border-radius: 50%;
   border: 2px solid #e5e5e5;
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    left: 60px;
+    left: 40px;
   }
 }
 
