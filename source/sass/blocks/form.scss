@@ -209,6 +209,7 @@
 
 .form__list {
   @include list-style-clear;
+  padding-left: 20px;
 }
 
 .form__list--checkbox {

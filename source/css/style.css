@@ -70,9 +70,9 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  line-height: 10px;
+  line-height: 18px;
   text-transform: uppercase;
-  padding: 23px;
+  padding: 19px;
   max-width: 296px;
 }
 .button:hover {
@@ -1906,6 +1906,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-left: 20px;
 }
 
 .form__list--checkbox {
@@ -2198,7 +2199,6 @@
   text-transform: uppercase;
   text-align: center;
   content: "ПАНОРАМА ДНЯ";
-  z-index: 1;
 }
 @media (min-width: 660px) {
   .catalog__link--pic-of-the-day::before {
@@ -2573,6 +2573,15 @@
   background-color: transparent;
   margin: 0;
   box-sizing: border-box;
+}
+.instruments__range-input:focus {
+  outline: none;
+}
+.instruments__range-input:focus::-webkit-slider-runnable-track {
+  outline: 2px solid #000000;
+}
+.instruments__range-input:focus::-moz-range-track {
+  outline: 2px solid #000000;
 }
 .instruments__range-input::-webkit-slider-runnable-track {
   height: 2px;
