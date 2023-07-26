@@ -1,7 +1,31 @@
 .page-header {
-  background: #1d2631 url("../../img/header-bg.jpg") no-repeat center center;
+  background: $color-major url("../../img/back-mobile.png") no-repeat center center;
   background-size: cover;
   color: $color-white;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.png");
+    background-size: 640px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: $color-major url("../../img/back-tablet.png") no-repeat center 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-tablet@2x.png");
+      background-size: 1320px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $color-major url("../../img/back-desktop.png") no-repeat center 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/back-desktop@2x.png");
+    }
+  }
 }
 
 .page-header__main {
@@ -48,9 +72,14 @@
   padding-top: 30px;
 
   &--index {
-    background: url("../../img/hand-phone-mob.png") no-repeat top 130px left;
+    background: url("../../img/hand-phone-mobile.png") no-repeat top 130px left;
     background-size: 307px 273px;
     height: 664px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/hand-phone-mobile@2x.png") no-repeat top 130px left;
+      background-size: 307px 273px;
+    }
   }
 
   &--form {
@@ -70,6 +99,11 @@
       background: url("../../img/hand-phone-tablet.png") no-repeat bottom right;
       background-size: 660px 545px;
       height: auto;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/hand-phone-tablet@2x.png") no-repeat bottom right;
+        background-size: 660px 545px;
+      }
     }
   }
 }
@@ -91,6 +125,11 @@
       background: url("../../img/hand-phone-desktop.png") no-repeat bottom right;
       background-size: 1050px 645px;
       height: auto;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../../img/hand-phone-desktop@2x.png") no-repeat bottom right;
+        background-size: 1050px 645px;
+      }
     }
 
     &--form {
