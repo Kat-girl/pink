@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>HTML Academy: {{projectTitle}}</title>
   </head>
   <body class="page__body">
@@ -54,19 +61,19 @@
                   <ul class="intro__list">
                     <li class="intro__item">
                       <a href="#" class=" intro__logo intro__logo--apple">
-                        <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple." class="apple">
+                        <img src="img/apple-logo.svg" srcset="img/apple-logo@2x.svg 2x" width="47" height="56" alt="Логотип Apple." class="apple">
                         <span class="visually-hidden">Скачать для iPhone и iPad.</span>
                       </a>
                     </li>
                     <li class="intro__item">
                       <a href="#" class=" intro__logo intro__logo--android">
-                        <img src="img/android-logo.svg" width="43" height="47" alt="Логотип Android." class="android">
+                        <img src="img/android-logo.svg" srcset="img/android-logo@2x.svg 2x" width="43" height="47" alt="Логотип Android." class="android">
                         <span class="visually-hidden">Скачать для Android.</span>
                       </a>
                     </li>
                     <li class="intro__item">
                       <a href="#" class=" intro__logo intro__logo--microsoft">
-                        <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft." class="microsoft">
+                        <img src="img/microsoft-logo.svg" srcset="img/microsoft-logo@2x.svg 2x" width="44" height="41" alt="Логотип Microsoft." class="microsoft">
                         <span class="visually-hidden">Скачать для Microsoft.</span>
                       </a>
                     </li>
@@ -104,16 +111,24 @@
               </li>
             </ul>
             <div class="advantages__image-container">
-              <img src="img/phone-friends-mobile.png" alt="Телефон со смайликом." width="157" height="320" class="advantages__image advantages__image-friends--mobile">
-              <img src="img/phone-friends-tablet.png" alt="Телефон со смайликом." width="268" height="547" class="advantages__image advantages__image-friends--tablet">
               <div class="advantages__image-wrapper">
-                <img src="img/phone-mood-desktop.png" alt="Телефон со смайликом." width="186" height="382" class="advantages__image advantages__image-mood--desktop">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/phone-mood-desktop.png 1x, img/phone-mood-desktop@2x.png 2x">
+                  <img src="" alt="Телефон со смайликом." width="186" height="382" class="advantages__image advantages__image-mood--desktop">
+                </picture>
               </div>
               <div class="advantages__image-wrapper">
-                <img src="img/phone-world-desktop.png" alt="Телефон со смайликом." width="186" height="382" class="advantages__image advantages__image-world--desktop">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/phone-world-desktop.png 1x, img/phone-world-desktop@2x.png 2x">
+                  <img src="" alt="Телефон со смайликом." width="186" height="382" class="advantages__image advantages__image-world--desktop">
+                </picture>
               </div>
               <div class="advantages__image-wrapper">
-                <img src="img/phone-friends-desktop.png" alt="Телефон со смайликом." width="186" height="382" class="advantages__image advantages__image-friends--desktop">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/phone-friends-desktop.png 1x, img/phone-friends-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/phone-friends-tablet.png 1x, img/phone-friends-tablet@2x.png 2x">
+                  <img src="img/phone-friends-mobile.png" srcset="img/phone-friends-mobile@2x.png 2x" alt="Телефон со смайликом." width="157" height="320" class="advantages__image">
+                </picture>
               </div>
             </div>
           </div>
