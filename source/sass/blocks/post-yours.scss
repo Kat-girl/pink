@@ -28,6 +28,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr) repeat(2, min-content);
     row-gap: 24px;
+    column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -66,6 +67,7 @@
   margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
+    @include sizes (300px, 400px);
     margin-bottom: 0;
   }
 }

@@ -2383,6 +2383,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr) repeat(2, min-content);
     row-gap: 24px;
+    column-gap: 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -2428,6 +2429,8 @@
 }
 @media (min-width: 660px) {
   .post-yours__picture {
+    width: 300px;
+    height: 400px;
     margin-bottom: 0;
   }
 }
