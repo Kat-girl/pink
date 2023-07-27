@@ -1,10 +1,17 @@
 .advantages {
   padding-top: 46px;
-  background: url("../../img/grey-background.svg") no-repeat center bottom;
-  background-size: 320px 894px;
+  background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
+  background-size: 100% 894px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../../img/grey-background-tablet.svg") no-repeat center bottom -188px;
+    background-size: 1200px 695px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 59px;
+    background-size: 1200px 715px;
+    background-position: center bottom -82px;
   }
 }
 
@@ -80,7 +87,7 @@
   margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +99,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   color: $color-black;
   text-align: center;
   font-size: 18px;
@@ -122,6 +129,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin-bottom: 0;
 
     @include padding-lr (0, 0);
   }

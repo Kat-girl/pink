@@ -76,6 +76,10 @@
     background-size: 307px 273px;
     height: 664px;
 
+    @media (min-width: 489px) {
+      background-position: top 145px left;
+    }
+
     @media (min-resolution: 2dppx) {
       background: url("../../img/hand-phone-mobile@2x.png") no-repeat top 130px left;
       background-size: 307px 273px;

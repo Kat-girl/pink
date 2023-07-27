@@ -463,6 +463,11 @@
   background-size: 307px 273px;
   height: 664px;
 }
+@media (min-width: 489px) {
+  .page-header__additional--index {
+    background-position: top 145px left;
+  }
+}
 @media (min-resolution: 2dppx) {
   .page-header__additional--index {
     background: url("../../img/hand-phone-mobile@2x.png") no-repeat top 130px left;
@@ -910,12 +915,20 @@
 
 .advantages {
   padding-top: 46px;
-  background: url("../../img/grey-background.svg") no-repeat center bottom;
-  background-size: 320px 894px;
+  background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
+  background-size: 100% 894px;
+}
+@media (min-width: 660px) {
+  .advantages {
+    background: url("../../img/grey-background-tablet.svg") no-repeat center bottom -188px;
+    background-size: 1200px 695px;
+  }
 }
 @media (min-width: 1024px) {
   .advantages {
     padding-bottom: 59px;
+    background-size: 1200px 715px;
+    background-position: center bottom -82px;
   }
 }
 
@@ -998,7 +1011,7 @@
 }
 @media (min-width: 660px) {
   .advantages__item {
-    margin-bottom: 47px;
+    margin-bottom: 35px;
   }
 }
 @media (min-width: 1024px) {
@@ -1011,7 +1024,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   color: #000000;
   text-align: center;
   font-size: 18px;
@@ -1044,6 +1057,7 @@
 @media (min-width: 660px) {
   .advantages__description {
     text-align: left;
+    margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
   }
