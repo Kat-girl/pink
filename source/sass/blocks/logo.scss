@@ -6,7 +6,7 @@
 }
 
 .logo__pink {
-  transform: translateX(-71px);
+  transform: translate(-70px, -2px);  //чтобы в фокусе прорисовывался outline со всех сторон
 
   @media (min-width: $tablet-width) {
     transform: none;
