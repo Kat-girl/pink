@@ -108,13 +108,25 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+
+  &:last-of-type {
+    @media (min-width: $desktop-width) {
+      .instruments__range-container::before {
+        display: none;
+      }
+    }
   }
 }
 
 .instruments__button {
   @include button-style-clear;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(10px);  //выравнивание кнопки по вертикали
+  }
 }
 
 .instruments__icon {
@@ -124,6 +136,11 @@
   @media (min-width: $tablet-width) {
     fill: $color-pink;
     opacity: 1;
+    transform: scale(0.5);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: none;
   }
 }
 
@@ -145,6 +162,7 @@
     @media (min-width: $tablet-width) {
       left: 0;
       right: 20px;
+      bottom: 0;
     }
   }
 }
@@ -205,7 +223,8 @@
     @media (min-width: $tablet-width) {
       top: -25px;
       left: 65px;
-      right: 65px;
+      right: 40px;
+      transform: translateY(10px);
     }
 
     @media (min-width: $desktop-width) {
@@ -239,7 +258,8 @@
     @media (min-width: $tablet-width) {
       top: -25px;
       left: 65px;
-      right: 65px;
+      right: 40px;
+      transform: translateY(10px);
     }
 
     @media (min-width: $desktop-width) {
