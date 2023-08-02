@@ -2,66 +2,45 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  fill: $color-white;
 }
 
-.logo--short {
+.logo__pink {
+  transform: translateX(-71px);
+
   @media (min-width: $tablet-width) {
+    transform: none;
+  }
+}
+
+.logo__glasses--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.logo__glasses--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.logo__sparkles {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
 .logo__link--glasses {
   margin-right: 15px;
-}
-
-.logo__icon {
-  display: block;
-}
-
-.page-header__logo .logo__icon {
-  fill: $color-white;
-}
-
-.page-header__logo:hover .logo__icon--glasses {
-  fill: $color-pink;
-}
-
-.page-header__logo:hover .logo__icon--name {
-  fill: $color-pink;
-}
-
-.page-header__logo:active .logo__icon--glasses {
-  fill: $color-white;
-  opacity: 0.3;
-}
-
-.page-header__logo:active .logo__icon--name {
-  fill: $color-white;
-  opacity: 0.3;
-}
-
-.page-footer__logo .logo__icon--glasses {
-  fill: $color-pink;
-}
-
-.page-footer__logo .logo__icon--name {
-  fill: $color-black;
-}
-
-.page-footer__logo:hover .logo__icon--glasses {
-  fill: $color-pink;
-}
-
-.page-footer__logo:hover .logo__icon--name {
-  fill: $color-pink;
-}
-
-.page-footer__logo:active .logo__icon--glasses {
-  fill: $color-pink;
-  opacity: 0.3;
-}
-
-.page-footer__logo:active .logo__icon--name {
-  fill: $color-major;
-  opacity: 0.3;
 }

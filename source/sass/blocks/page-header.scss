@@ -40,7 +40,25 @@
 }
 
 .page-header__logo {
-  margin-right: 170px;
+  display: block;
+
+  &:hover .logo {
+    fill: $color-pink;
+  }
+
+  &:active .logo {
+    fill: rgba($color: $color-white, $alpha: 0.3);
+  }
+
+  @media (max-width: $mobile-only) {
+    &:focus {
+      outline: none;
+    }
+
+    &:focus .logo__pink {
+      outline: auto;
+    }
+  }
 }
 
 .page-header__main--nav-opened {
@@ -57,15 +75,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.page-header__logo--full {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    width: 147px;
-  }
 }
 
 .page-header__additional {

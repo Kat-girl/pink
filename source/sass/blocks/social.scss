@@ -31,6 +31,10 @@
 
   &:active {
     border: 3px solid rgba(40, 54, 69, 0.1);
+
+    .social__icon {
+      opacity: 0.3;
+    }
   }
 }
 

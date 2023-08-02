@@ -18,12 +18,35 @@
 }
 
 .page-footer__logo {
+  margin-top: 1px;  //чтобы у ссылки в состоянии focus полностью прорисовывался outline
   margin-bottom: 41px;
   margin-right: 20px;
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.page-footer__logo-link:hover .page-footer__logo--pink {
+  fill: $color-pink;
+}
+
+.page-footer__logo-link:active {
+  opacity: 0.3;
+}
+
+.page-footer__logo--pink {
+  fill: $color-major;
+}
+
+.page-footer__logo--glasses {
+  fill: $color-pink;
+}
+
+.page-footer__logo--glasses.logo__glasses--tablet {
+  @media (max-width: $tablet-only) {
+    display: block;
   }
 }
 
