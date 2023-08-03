@@ -104,8 +104,50 @@
 }
 
 .form__input--contacts {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;
+  }
+}
+
+.form__input-container--phone {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      @include sizes(59px, 59px);
+      position: absolute;
+      background-color: $color-dark-grey;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: url("../../img/form/phone-icon.svg");
+    }
+  }
+}
+
+.form__input-container--email {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::before {
+      @include sizes(59px, 59px);
+      position: absolute;
+      background-color: $color-dark-grey;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: url("../../img/form/mail-icon.svg");
+    }
   }
 }
 
