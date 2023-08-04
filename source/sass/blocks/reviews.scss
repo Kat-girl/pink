@@ -5,7 +5,8 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    padding-top: 109px;
+    padding-top: 94px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +37,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 49px;
+    margin-bottom: 35px;
   }
 }
 
@@ -85,7 +86,7 @@
   @include padding-lr(5px, 5px);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 51px;
+    margin-bottom: 34px;
     font-size: 18px;
   }
 

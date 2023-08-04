@@ -203,6 +203,13 @@
   padding: 10px 50px 24px;
   box-sizing: border-box;
 }
+@media (min-width: 660px) {
+  .table__header__cell {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 5px;
+  }
+}
 
 .table__header__cell--hidden {
   visibility: hidden;
@@ -217,6 +224,13 @@
   left: -1px;
   content: url("../../img/hit-ribbon.svg");
 }
+@media (min-width: 660px) {
+  .table__header__cell--ribboned::before {
+    content: url("../../img/hit-ribbon-tablet.svg");
+    top: -2px;
+    left: 0;
+  }
+}
 .table__header__cell--ribboned::after {
   position: absolute;
   top: 13px;
@@ -227,6 +241,12 @@
   font-weight: 400;
   line-height: 30px;
   transform: rotate(-45deg);
+}
+@media (min-width: 660px) {
+  .table__header__cell--ribboned::after {
+    top: 9px;
+    left: 9px;
+  }
 }
 
 .table__cell__text-only {
@@ -267,8 +287,8 @@
 }
 @media (min-width: 660px) {
   .table__cell {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 
@@ -287,7 +307,7 @@
 }
 @media (min-width: 660px) {
   .table__cell__picture {
-    right: 50%;
+    right: 40%;
     transform: translateY(-50%);
   }
 }
@@ -402,6 +422,12 @@
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
 }
+@media (min-width: 660px) {
+  .page-header__main {
+    padding-top: 33px;
+    padding-bottom: 37px;
+  }
+}
 @media (min-width: 1024px) {
   .page-header__main {
     padding-bottom: 40px;
@@ -476,14 +502,15 @@
   }
   .page-header__additional--index {
     background: url("../../img/hand-phone-tablet.png") no-repeat bottom right;
-    background-size: 660px 545px;
+    background-size: 656px 526px;
     height: auto;
+    padding-top: 95px;
   }
 }
 @media (min-width: 660px) and (min-resolution: 2dppx) {
   .page-header__additional--index {
     background: url("../../img/hand-phone-tablet@2x.png") no-repeat bottom right;
-    background-size: 660px 545px;
+    background-size: 656px 526px;
   }
 }
 .page-header__container {
@@ -530,7 +557,7 @@
 }
 @media (min-width: 660px) {
   .page-header__title {
-    margin-bottom: 39px;
+    margin-bottom: 30px;
     font-size: 40px;
     line-height: 120%;
   }
@@ -864,6 +891,11 @@
   padding: 16px 14px;
   margin-bottom: 32px;
 }
+@media (min-width: 660px) {
+  .intro__link {
+    margin-bottom: 46px;
+  }
+}
 .intro__link:hover {
   background-color: #ffffff;
   color: #d22856;
@@ -881,6 +913,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+@media (min-width: 660px) {
+  .intro__list {
+    padding-left: 44px;
+    margin-bottom: 18px;
+  }
 }
 
 .intro__item {
@@ -911,6 +949,7 @@
 }
 @media (min-width: 660px) {
   .advantages {
+    padding-top: 46px;
     background: url("../../img/grey-background-tablet.svg") no-repeat center bottom -188px;
     background-size: 1200px 695px;
   }
@@ -928,7 +967,7 @@
 }
 @media (min-width: 660px) {
   .advantages__slogans-container {
-    margin-bottom: 47px;
+    margin-bottom: 34px;
   }
 }
 
@@ -1002,7 +1041,7 @@
 }
 @media (min-width: 660px) {
   .advantages__item {
-    margin-bottom: 35px;
+    margin-bottom: 39px;
   }
 }
 @media (min-width: 1024px) {
@@ -1155,7 +1194,7 @@
 
 .extra-info__wrapper {
   position: relative;
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 30px;
   max-width: 960px;
 }
@@ -1168,8 +1207,8 @@
 
 .extra-info__wrapper::before {
   position: absolute;
-  bottom: 0;
-  left: 20px;
+  bottom: 4px;
+  left: 0;
   content: url("../../img/timer-tablet.svg");
 }
 @media (min-width: 1024px) {
@@ -1191,7 +1230,7 @@
 
 .extra-info__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -1207,7 +1246,8 @@
 
 .extra-info__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  padding-right: 20px;
   color: #283645;
   font-size: 14px;
   font-weight: 400;
@@ -1252,7 +1292,8 @@
 }
 @media (min-width: 660px) {
   .reviews {
-    padding-top: 109px;
+    padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -1287,7 +1328,7 @@
 }
 @media (min-width: 660px) {
   .reviews__item {
-    margin-bottom: 49px;
+    margin-bottom: 35px;
   }
 }
 
@@ -1341,7 +1382,7 @@
 }
 @media (min-width: 660px) {
   .reviews__text {
-    margin-bottom: 51px;
+    margin-bottom: 34px;
     font-size: 18px;
   }
 }
@@ -1375,6 +1416,14 @@
   background-size: 100% 505px;
   padding-top: 99px;
   padding-bottom: 27px;
+}
+@media (min-width: 660px) {
+  .tariffs {
+    background: url("../../img/grey-background-tablet.svg") no-repeat center bottom;
+    background-size: 100% 420px;
+    padding-top: 110px;
+    padding-bottom: 0;
+  }
 }
 
 .tariffs__table-container {

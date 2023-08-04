@@ -10,7 +10,7 @@
 
 .extra-info__wrapper {
   position: relative;
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 30px;
   max-width: 960px;
 
@@ -22,8 +22,8 @@
 
 .extra-info__wrapper::before {
   position: absolute;
-  bottom: 0;
-  left: 20px;
+  bottom: 4px;
+  left: 0;
   content: url("../../img/timer-tablet.svg");
 
   @media (min-width: $desktop-width) {
@@ -43,7 +43,7 @@
 
 .extra-info__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   color: $color-black;
   font-size: 30px;
   font-weight: 700;
@@ -58,7 +58,8 @@
 
 .extra-info__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  padding-right: 20px;
   color: $color-major;
   font-size: 14px;
   font-weight: 400;

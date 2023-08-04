@@ -3,6 +3,13 @@
   background-size: 100% 505px;
 
   @include padding-tb (99px, 27px);
+
+  @media (min-width: $tablet-width) {
+    background: url("../../img/grey-background-tablet.svg") no-repeat center bottom;
+    background-size: 100% 420px;
+    padding-top: 110px;
+    padding-bottom: 0;
+  }
 }
 
 .tariffs__table-container {

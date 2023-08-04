@@ -25,6 +25,10 @@
   padding: 16px 14px;
   margin-bottom: 32px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+
   &:hover {
     background-color: $color-white;
     color: $color-pink;
@@ -42,6 +46,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 44px;
+    margin-bottom: 18px;
+  }
 }
 
 .intro__item {

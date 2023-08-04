@@ -33,6 +33,10 @@
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    @include padding-tb (33px, 37px);
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 40px;
   }
@@ -110,12 +114,13 @@
 
     &--index {
       background: url("../../img/hand-phone-tablet.png") no-repeat bottom right;
-      background-size: 660px 545px;
+      background-size: 656px 526px;
       height: auto;
+      padding-top: 95px;
 
       @media (min-resolution: 2dppx) {
         background: url("../../img/hand-phone-tablet@2x.png") no-repeat bottom right;
-        background-size: 660px 545px;
+        background-size: 656px 526px;
       }
     }
   }
@@ -163,7 +168,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 39px;
+    margin-bottom: 30px;
     font-size: 40px;
     line-height: 120%;
   }

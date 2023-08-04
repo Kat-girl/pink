@@ -21,6 +21,11 @@
   text-transform: uppercase;
   padding: 10px 50px 24px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    @include padding-lr (25px, 25px);
+    padding-bottom: 5px;
+  }
 }
 
 .table__header__cell--hidden {
@@ -35,6 +40,12 @@
     top: -1px;
     left: -1px;
     content: url("../../img/hit-ribbon.svg");
+
+    @media (min-width: $tablet-width) {
+      content: url("../../img/hit-ribbon-tablet.svg");
+      top: -2px;
+      left: 0;
+    }
   }
 
   &::after {
@@ -47,6 +58,11 @@
     font-weight: 400;
     line-height: 30px;
     transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      top: 9px;
+      left: 9px;
+    }
   }
 }
 
@@ -86,7 +102,7 @@
   @include padding-tb (14px, 18px);
 
   @media (min-width: $tablet-width) {
-    @include padding-tb (22px, 22px);
+    @include padding-tb (8px, 8px);
   }
 }
 
@@ -105,7 +121,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    right: 50%;
+    right: 40%;
     transform: translateY(-50%);
   }
 }

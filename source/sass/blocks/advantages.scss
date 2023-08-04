@@ -4,6 +4,7 @@
   background-size: 100% 894px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 46px;
     background: url("../../img/grey-background-tablet.svg") no-repeat center bottom -188px;
     background-size: 1200px 695px;
   }
@@ -19,7 +20,7 @@
   margin-bottom: 115px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 34px;
   }
 }
 
@@ -87,7 +88,7 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
