@@ -107,6 +107,19 @@
   display: block;
   margin: auto;
 
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba($color: $color-white, $alpha: 0.3);
+  }
+
+  &:disabled {
+    background-color: $color-dark-grey;
+    color: $color-white;
+  }
+
   @media (min-width: $tablet-width) {
     width: 295px;
   }

@@ -2957,6 +2957,16 @@
   display: block;
   margin: auto;
 }
+.modal__button:hover {
+  background-color: #1c9b5e;
+}
+.modal__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.modal__button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
+}
 @media (min-width: 660px) {
   .modal__button {
     width: 295px;
