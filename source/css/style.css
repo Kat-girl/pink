@@ -748,7 +748,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
-  padding: 15px;
+  padding: 16px;
 }
 @media (min-width: 1024px) {
   .navigation__link {
