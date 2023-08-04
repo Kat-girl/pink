@@ -1,8 +1,8 @@
 .intro {
   background-color: #1d2631;
   color: $color-white;
-  padding-top: 28px;
-  padding-bottom: 38px;
+  padding-top: 24px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -37,7 +37,7 @@
 
 .intro__list {
   @include list-style-clear;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   padding-left: 38px;
   display: flex;
   flex-wrap: wrap;

@@ -314,6 +314,7 @@
   align-items: flex-end;
   justify-content: center;
   fill: #ffffff;
+  transform: translateY(-6px);
 }
 
 .logo__pink {
@@ -397,9 +398,9 @@
 }
 
 .page-header__main {
+  padding-top: 13px;
+  padding-bottom: 13px;
   background-color: rgba(0, 0, 0, 0.3);
-  padding-top: 22px;
-  padding-bottom: 22px;
   width: 100%;
 }
 @media (min-width: 1024px) {
@@ -444,12 +445,12 @@
 }
 
 .page-header__additional {
-  padding-top: 30px;
+  padding-top: 24px;
 }
 .page-header__additional--index {
-  background: url("../../img/hand-phone-mobile.png") no-repeat top 130px left;
-  background-size: 307px 273px;
-  height: 664px;
+  background: url("../../img/hand-phone-mobile.png") no-repeat top 110px left;
+  background-size: 320px 285px;
+  height: 643px;
 }
 @media (min-width: 489px) {
   .page-header__additional--index {
@@ -458,8 +459,8 @@
 }
 @media (min-resolution: 2dppx) {
   .page-header__additional--index {
-    background: url("../../img/hand-phone-mobile@2x.png") no-repeat top 130px left;
-    background-size: 307px 273px;
+    background: url("../../img/hand-phone-mobile@2x.png") no-repeat top 110px left;
+    background-size: 320px 285px;
   }
 }
 .page-header__additional--form {
@@ -523,7 +524,7 @@
 .page-header__title {
   margin: 0;
   font-size: 24px;
-  line-height: normal;
+  line-height: 29px;
   font-weight: 300;
   text-align: center;
 }
@@ -838,8 +839,8 @@
 .intro {
   background-color: #1d2631;
   color: #ffffff;
-  padding-top: 28px;
-  padding-bottom: 38px;
+  padding-top: 24px;
+  padding-bottom: 33px;
 }
 @media (min-width: 660px) {
   .intro {
@@ -875,7 +876,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   padding-left: 38px;
   display: flex;
   flex-wrap: wrap;
@@ -904,7 +905,7 @@
 }
 
 .advantages {
-  padding-top: 46px;
+  padding-top: 40px;
   background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
   background-size: 100% 894px;
 }
@@ -923,7 +924,7 @@
 }
 
 .advantages__slogans-container {
-  margin-bottom: 123px;
+  margin-bottom: 115px;
 }
 @media (min-width: 660px) {
   .advantages__slogans-container {
@@ -933,7 +934,7 @@
 
 .advantages__slogan {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 32px;
   font-size: 24px;
   text-align: center;
   font-weight: 300;
@@ -997,7 +998,7 @@
 }
 
 .advantages__item {
-  margin-bottom: 43px;
+  margin-bottom: 32px;
 }
 @media (min-width: 660px) {
   .advantages__item {
@@ -1014,7 +1015,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #000000;
   text-align: center;
   font-size: 18px;
@@ -1037,7 +1038,6 @@
 
 .advantages__description {
   margin: 0;
-  margin-bottom: 43px;
   text-align: center;
   font-weight: 400;
   line-height: 24px;
@@ -1103,7 +1103,7 @@
 .advantages__image {
   display: block;
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 12px;
   margin-bottom: -43px;
 }
 @media (min-width: 660px) {
@@ -1246,7 +1246,7 @@
 
 .reviews {
   position: relative;
-  padding-top: 50px;
+  padding-top: 42px;
   padding-bottom: 20px;
   overflow: hidden;
 }
@@ -1281,7 +1281,7 @@
 }
 
 .reviews__item {
-  margin-bottom: 44px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
 }
@@ -1298,7 +1298,7 @@
   font-weight: 700;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 12px;
 }
 @media (min-width: 660px) {
   .reviews__author {
@@ -1352,6 +1352,9 @@
   }
 }
 
+.reviews__slider-buttons {
+  padding-left: 16px;
+}
 @media (min-width: 1024px) {
   .reviews__slider-buttons {
     display: none;
@@ -1370,7 +1373,7 @@
 .tariffs {
   background: url("../../img/grey-background.svg") no-repeat center bottom;
   background-size: 320px 506px;
-  padding-top: 130px;
+  padding-top: 99px;
   padding-bottom: 49px;
 }
 
@@ -1400,7 +1403,7 @@
 
 .tariffs__table {
   position: absolute;
-  left: -50%;
+  left: -60%;
   transform: translateX(-11%);
   margin-bottom: 45px;
 }

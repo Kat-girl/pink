@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 46px;
+  padding-top: 40px;
   background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
   background-size: 100% 894px;
 
@@ -16,7 +16,7 @@
 }
 
 .advantages__slogans-container {
-  margin-bottom: 123px;
+  margin-bottom: 115px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
@@ -25,7 +25,7 @@
 
 .advantages__slogan {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 32px;
   font-size: 24px;
   text-align: center;
   font-weight: 300;
@@ -84,7 +84,7 @@
 }
 
 .advantages__item {
-  margin-bottom: 43px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
@@ -99,7 +99,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: $color-black;
   text-align: center;
   font-size: 18px;
@@ -120,7 +120,6 @@
 
 .advantages__description {
   margin: 0;
-  margin-bottom: 43px;
   text-align: center;
   font-weight: 400;
   line-height: 24px;
@@ -183,7 +182,7 @@
 .advantages__image {
   display: block;
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 12px;
   margin-bottom: -43px;
 
   @media (min-width: $tablet-width) {

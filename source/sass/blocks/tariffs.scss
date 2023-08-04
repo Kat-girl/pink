@@ -2,7 +2,7 @@
   background: url("../../img/grey-background.svg") no-repeat center bottom;
   background-size: 320px 506px;
 
-  @include padding-tb (130px, 49px);
+  @include padding-tb (99px, 49px);
 }
 
 .tariffs__table-container {
@@ -27,7 +27,7 @@
 
 .tariffs__table {
   position: absolute;
-  left: -50%;
+  left: -60%;
   transform: translateX(-11%);
   margin-bottom: 45px;
 

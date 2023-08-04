@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  padding-top: 50px;
+  padding-top: 42px;
   padding-bottom: 20px;
   overflow: hidden;
 
@@ -31,7 +31,7 @@
 }
 
 .reviews__item {
-  margin-bottom: 44px;
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
 
@@ -47,7 +47,7 @@
   font-weight: 700;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -95,6 +95,8 @@
 }
 
 .reviews__slider-buttons {
+  padding-left: 16px;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
