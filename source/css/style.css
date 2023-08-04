@@ -2835,6 +2835,7 @@
 }
 
 .modal {
+  display: none;
   width: 320px;
   position: fixed;
   top: 50%;
@@ -2851,12 +2852,24 @@
   .modal {
     width: 460px;
     border-radius: 5px;
-    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   }
+}
+@media (min-width: 1024px) {
+  .modal {
+    width: 780px;
+  }
+}
+
+.modal__success {
+  display: none;
 }
 
 .modal__failure {
   display: none;
+}
+
+.modal--opened {
+  display: block;
 }
 
 .modal__wrapper {
@@ -2883,7 +2896,24 @@
 }
 
 .modal__success .modal__text {
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 41px;
+}
+@media (min-width: 660px) {
+  .modal__success .modal__text {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  .modal__success .modal__text br {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .modal__success .modal__text {
+    padding-left: 205px;
+    padding-right: 205px;
+  }
 }
 
 .modal__text {
@@ -2899,10 +2929,23 @@
     padding-right: 90px;
   }
 }
+@media (min-width: 1024px) {
+  .modal__text {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+}
 
 .modal__button-container {
   padding-top: 51px;
   padding-bottom: 51px;
+}
+
+@media (min-width: 1024px) {
+  .modal__failure .modal__button-container {
+    margin-top: 65px;
+    background-color: #f2f2f2;
+  }
 }
 
 .modal__success .modal__button-container {
@@ -2913,5 +2956,17 @@
   width: 276px;
   display: block;
   margin: auto;
+}
+@media (min-width: 660px) {
+  .modal__button {
+    width: 295px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal__button--success {
+    max-width: 456px;
+    width: 456px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

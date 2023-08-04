@@ -1,4 +1,5 @@
 .modal {
+  display: none;
   width: 320px;
   position: fixed;
   top: 50%;
@@ -14,12 +15,23 @@
   @media (min-width: $tablet-width) {
     width: 460px;
     border-radius: 5px;
-    box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal__success {
+  display: none;
 }
 
 .modal__failure {
   display: none;
+}
+
+.modal--opened {
+  display: block;
 }
 
 .modal__wrapper {
@@ -43,7 +55,20 @@
 }
 
 .modal__success .modal__text {
+  @include padding-lr(10px, 10px);
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    @include padding-lr(90px, 90px);
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include padding-lr(205px, 205px);
+  }
 }
 
 .modal__text {
@@ -56,10 +81,21 @@
   @media (min-width: $tablet-width) {
     @include padding-lr(90px, 90px);
   }
+
+  @media (min-width: $desktop-width) {
+    @include padding-lr(225px, 225px);
+  }
 }
 
 .modal__button-container {
   @include padding-tb (51px, 51px);
+}
+
+.modal__failure .modal__button-container {
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+    background-color: $color-grey;
+  }
 }
 
 .modal__success .modal__button-container {
@@ -70,4 +106,15 @@
   width: 276px;
   display: block;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+  }
+}
+
+.modal__button--success {
+  @media (min-width: $desktop-width) {
+    max-width: 456px;  //переопределила максимальную ширину .button, чтобы эта кнопка могла быть шире
+    width: 456px;
+  }
 }
