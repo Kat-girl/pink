@@ -40,6 +40,7 @@
 
 .page-header__logo {
   display: block;
+  transform: translateY(-6px);
 
   &:hover .logo {
     fill: $color-pink;

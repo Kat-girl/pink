@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 47px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
@@ -12,7 +12,7 @@
 
 .contacts__title {
   margin: auto;
-  margin-bottom: 45px;
+  margin-bottom: 36px;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
@@ -41,7 +41,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 31px;
+  margin-bottom: 19px;
   margin-left: 20px;
   margin-right: 20px;
 
@@ -69,7 +69,7 @@
   font-weight: 700;
   line-height: normal;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 5px;
 }
 
 .contacts__link {
@@ -78,7 +78,7 @@
   text-align: center;
   font-size: 24px;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 28px;
   text-decoration: none;
 
   &[href]:hover {
@@ -102,7 +102,7 @@
 
   &::before {
     position: absolute;
-    top: -86px;
+    top: -70px;
     content: url("../../img/triangle-white-footer.svg");
     z-index: 1;
   }

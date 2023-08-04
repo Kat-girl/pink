@@ -200,7 +200,7 @@
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 8px 15px 20px;
+  padding: 10px 50px 24px;
   box-sizing: border-box;
 }
 
@@ -263,7 +263,7 @@
   box-sizing: border-box;
   position: relative;
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 18px;
 }
 @media (min-width: 660px) {
   .table__cell {
@@ -314,7 +314,6 @@
   align-items: flex-end;
   justify-content: center;
   fill: #ffffff;
-  transform: translateY(-6px);
 }
 
 .logo__pink {
@@ -411,6 +410,7 @@
 
 .page-header__logo {
   display: block;
+  transform: translateY(-6px);
 }
 .page-header__logo:hover .logo {
   fill: #d22856;
@@ -1371,10 +1371,10 @@
 }
 
 .tariffs {
-  background: url("../../img/grey-background.svg") no-repeat center bottom;
-  background-size: 320px 506px;
+  background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
+  background-size: 100% 505px;
   padding-top: 99px;
-  padding-bottom: 49px;
+  padding-bottom: 27px;
 }
 
 .tariffs__table-container {
@@ -1383,6 +1383,7 @@
   max-width: 920px;
   box-sizing: border-box;
   margin: auto;
+  margin-bottom: 15px;
   min-height: 308px;
   overflow-x: scroll;
   -ms-overflow-style: none;
@@ -1403,9 +1404,8 @@
 
 .tariffs__table {
   position: absolute;
-  left: -60%;
+  left: -56%;
   transform: translateX(-11%);
-  margin-bottom: 45px;
 }
 @media (min-width: 660px) {
   .tariffs__table {
@@ -1414,6 +1414,9 @@
   }
 }
 
+.tariffs__slider-buttons {
+  padding-left: 18px;
+}
 @media (min-width: 660px) {
   .tariffs__slider-buttons {
     display: none;
@@ -1421,7 +1424,7 @@
 }
 
 .contacts {
-  padding-top: 47px;
+  padding-top: 40px;
 }
 @media (min-width: 660px) {
   .contacts {
@@ -1436,7 +1439,7 @@
 
 .contacts__title {
   margin: auto;
-  margin-bottom: 45px;
+  margin-bottom: 36px;
   text-align: center;
   font-weight: 300;
   font-size: 24px;
@@ -1469,7 +1472,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 31px;
+  margin-bottom: 19px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -1499,7 +1502,7 @@
   font-weight: 700;
   line-height: normal;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 5px;
 }
 
 .contacts__link {
@@ -1508,7 +1511,7 @@
   text-align: center;
   font-size: 24px;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 28px;
   text-decoration: none;
 }
 .contacts__link[href]:hover {
@@ -1530,7 +1533,7 @@
 }
 .contacts__map-container::before {
   position: absolute;
-  top: -86px;
+  top: -70px;
   content: url("../../img/triangle-white-footer.svg");
   z-index: 1;
 }
@@ -1576,7 +1579,7 @@
 
 .page-footer__logo {
   margin-top: 1px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -1609,7 +1612,7 @@
 }
 
 .page-footer__social {
-  margin-bottom: 41px;
+  margin-bottom: 28px;
   margin-right: 20px;
   margin-left: 20px;
 }

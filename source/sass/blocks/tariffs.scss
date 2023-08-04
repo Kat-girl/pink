@@ -1,8 +1,8 @@
 .tariffs {
-  background: url("../../img/grey-background.svg") no-repeat center bottom;
-  background-size: 320px 506px;
+  background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
+  background-size: 100% 505px;
 
-  @include padding-tb (99px, 49px);
+  @include padding-tb (99px, 27px);
 }
 
 .tariffs__table-container {
@@ -11,6 +11,7 @@
   max-width: 920px;
   box-sizing: border-box;
   margin: auto;
+  margin-bottom: 15px;
   min-height: 308px;
   overflow-x: scroll;
   -ms-overflow-style: none;  /* Скрываем scrollbar для IE и Edge */
@@ -27,9 +28,8 @@
 
 .tariffs__table {
   position: absolute;
-  left: -60%;
+  left: -56%;
   transform: translateX(-11%);
-  margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -38,6 +38,8 @@
 }
 
 .tariffs__slider-buttons {
+  padding-left: 18px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

@@ -19,7 +19,7 @@
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 8px 15px 20px;
+  padding: 10px 50px 24px;
   box-sizing: border-box;
 }
 
@@ -83,7 +83,7 @@
   box-sizing: border-box;
   position: relative;
 
-  @include padding-tb (14px, 14px);
+  @include padding-tb (14px, 18px);
 
   @media (min-width: $tablet-width) {
     @include padding-tb (22px, 22px);
