@@ -235,6 +235,10 @@
     margin-bottom: 50px;
     transform: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .form__legend--contacts {
@@ -244,6 +248,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
   }
 }
 
@@ -393,6 +401,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
 }
 
 .form__radio {
@@ -406,6 +418,11 @@
 
   @media (min-width: $tablet-width) {
     left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -2px;
+    left: 50px;
   }
 }
 
@@ -427,6 +444,7 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 58px;
   }
 }
 
@@ -451,6 +469,10 @@
 
   @media (min-width: $tablet-width) {
     min-height: 189px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 127px;
   }
 }
 

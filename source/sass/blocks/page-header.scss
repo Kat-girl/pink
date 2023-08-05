@@ -164,6 +164,11 @@
 
     &--form {
       padding-bottom: 75px;
+
+      @media (min-width: $desktop-width) {
+        padding-top: 60px;
+        padding-bottom: 64px;
+      }
     }
   }
 

@@ -6,6 +6,10 @@
     padding-top: 90px;
     padding-bottom: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .questionnaire__title {
