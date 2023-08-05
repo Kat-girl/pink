@@ -86,8 +86,9 @@
 
   &--index {
     background: url("../../img/hand-phone-mobile.png") no-repeat top 110px left;
-    background-size: 320px 285px;
+    background-size: 320px 290px;
     height: 643px;
+    min-height: 643px;
 
     @media (min-width: 489px) {
       background-position: top 145px left;
@@ -95,7 +96,11 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/hand-phone-mobile@2x.png") no-repeat top 110px left;
-      background-size: 320px 285px;
+      background-size: 320px 290px;
+
+      @media (min-width: 489px) {
+        background-position: top 145px left;
+      }
     }
   }
 
@@ -114,13 +119,14 @@
 
     &--index {
       background: url("../../img/hand-phone-tablet.png") no-repeat bottom right;
-      background-size: 656px 526px;
+      background-size: 656px 544px;
       height: auto;
+      min-height: 524px;
       padding-top: 95px;
 
       @media (min-resolution: 2dppx) {
         background: url("../../img/hand-phone-tablet@2x.png") no-repeat bottom right;
-        background-size: 656px 526px;
+        background-size: 656px 544px;
       }
     }
   }

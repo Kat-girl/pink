@@ -5,9 +5,9 @@
   @include padding-tb (99px, 27px);
 
   @media (min-width: $tablet-width) {
-    background: url("../../img/grey-background-tablet.svg") no-repeat center bottom;
-    background-size: 100% 420px;
-    padding-top: 110px;
+    background: url("../../img/grey-background-tablet.svg") no-repeat center top;
+    background-size: 100% 695px;
+    padding-top: 124px;
     padding-bottom: 0;
   }
 }
@@ -30,6 +30,7 @@
 
   @media (min-width: $tablet-width) {
     @include padding-lr (20px, 20px);
+    min-height: 288px;
   }
 }
 

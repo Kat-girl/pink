@@ -2,7 +2,7 @@
   padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,7 @@
     color: #283645;
     font-size: 40px;
     line-height: normal;
-    margin-bottom: 51px;
+    margin-bottom: 32px;
     width: 462px;
   }
 
@@ -46,9 +46,10 @@
   margin-right: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 55px;
-    margin-right: 38px;
-    margin-left: 38px;
+    margin: auto;
+    margin-bottom: 46px;
+    // margin-right: 40px;
+    // margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,8 +104,15 @@
   &::before {
     position: absolute;
     top: -70px;
+    right: 0;
+    left: 0;
     content: url("../../img/triangle-white-footer.svg");
     z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      content: url("../../img/triangle-white-footer-tablet.svg");
+      top: -56px;
+    }
   }
 }
 

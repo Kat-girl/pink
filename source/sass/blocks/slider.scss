@@ -8,6 +8,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .slider__buttons-item {
