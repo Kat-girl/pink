@@ -26,6 +26,12 @@
     @include padding-lr (25px, 25px);
     padding-bottom: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    @include padding-lr (30px, 30px);
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
 }
 
 .table__header__cell--hidden {
@@ -76,16 +82,28 @@
   @media (max-width: $mobile-only) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .table__header__title {
   font-size: 16px;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .table__header__price {
   font-size: 18px;
   font-weight: 300;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .table__cell {
@@ -103,6 +121,10 @@
 
   @media (min-width: $tablet-width) {
     @include padding-tb (8px, 8px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include padding-tb (14px, 14px);
   }
 }
 

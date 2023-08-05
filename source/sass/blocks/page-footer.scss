@@ -6,7 +6,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include padding-lr (100px, 100px);
+    @include padding-lr (110px, 110px);
+    padding-top: 63px;
   }
 }
 

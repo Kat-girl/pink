@@ -15,8 +15,8 @@
   max-width: 960px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 115px;
-    padding-bottom: 120px;
+    padding-top: 103px;
+    padding-bottom: 111px;
   }
 }
 
@@ -27,8 +27,8 @@
   content: url("../../img/timer-tablet.svg");
 
   @media (min-width: $desktop-width) {
-    top: 17px;
-    left: 131px;
+    top: 8px;
+    left: 11px;
     content: url("../../img/timer-desktop.svg");
   }
 }
@@ -37,7 +37,7 @@
   margin-left: 310px;
 
   @media (min-width: $desktop-width) {
-    margin-left: 500px;
+    margin-left: 380px;
   }
 }
 
@@ -52,7 +52,11 @@
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
-    margin-bottom: 37px;
+    margin-bottom: 26px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -69,7 +73,23 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 47px;
+    margin-bottom: 30px;
+  }
+}
+
+.extra-info__text--br--tablet--width {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.extra-info__text--br--desktop-width {
+  @media (max-width: $tablet-only) {
+    display: none;
   }
 }
 

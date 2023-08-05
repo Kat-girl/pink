@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 57px;
   }
 }
 
@@ -29,7 +29,7 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: normal;
-    margin-bottom: 61px;
+    margin-bottom: 41px;
   }
 }
 
@@ -48,13 +48,12 @@
   @media (min-width: $tablet-width) {
     margin: auto;
     margin-bottom: 46px;
-    // margin-right: 40px;
-    // margin-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -71,6 +70,10 @@
   line-height: normal;
   margin: 0;
   margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .contacts__link {
@@ -81,6 +84,10 @@
   font-weight: 300;
   line-height: 28px;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    line-height: 32px;
+  }
 
   &[href]:hover {
     color: $color-major;
@@ -110,12 +117,16 @@
     height: 123px;
     background: url("../../img/triangle-white-footer.svg") no-repeat center top;
     background-size: 100% 123px;
-    content: "DDD";
+    content: "";
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-      // content: url("../../img/triangle-white-footer-tablet.svg");
-      // top: -56px;
+      background: url("../../img/triangle-white-footer-tablet.svg") no-repeat center top;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("../../img/triangle-white-footer-desktop.svg") no-repeat center top;
+      top: 0;
     }
   }
 }

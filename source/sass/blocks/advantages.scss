@@ -157,6 +157,15 @@
   }
 }
 
+.advantages__description--world,
+.advantages__description--friends {
+  @media (max-width: $tablet-only) {
+    br {
+      display: none;
+    }
+  }
+}
+
 .advantages__image-container {
   overflow: hidden;
 

@@ -10,6 +10,11 @@
     padding-top: 124px;
     padding-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 164px;
+    padding-bottom: 75px;
+  }
 }
 
 .tariffs__table-container {
@@ -31,6 +36,10 @@
   @media (min-width: $tablet-width) {
     @include padding-lr (20px, 20px);
     min-height: 288px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include padding-lr (0, 0);
   }
 }
 
