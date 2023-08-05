@@ -66,14 +66,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 }
 
 .form__input-group--contacts {
   @media (min-width: $tablet-width) {
     display: grid;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -107,7 +107,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
@@ -232,7 +232,7 @@
 
   @media (min-width: $tablet-width) {
     @include padding-lr (25px, 25px);
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     transform: none;
   }
 }
@@ -240,6 +240,10 @@
 .form__legend--contacts {
   @media (max-width: $mobile-only) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
   }
 }
 
@@ -249,7 +253,9 @@
   padding-top: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    transform: none;
   }
 }
 
@@ -356,7 +362,7 @@
     border: 2px solid #e5e5e5;
     margin-left: 22px;
     margin-right: 22px;
-    margin-bottom: 51px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {

@@ -107,7 +107,7 @@
 
   &--form {
     padding-top: 31px;
-    padding-bottom: 51px;
+    padding-bottom: 35px;
   }
 
   &--catalog {
@@ -130,6 +130,10 @@
         background: url("../../img/hand-phone-tablet@2x.png") no-repeat bottom right;
         background-size: 656px 544px;
       }
+    }
+
+    &--form {
+      padding-top: 67px;
     }
   }
 }
