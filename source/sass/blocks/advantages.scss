@@ -10,6 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 62px;
     padding-bottom: 59px;
     background-size: 1200px 715px;
     background-position: center bottom -82px;
@@ -39,6 +40,10 @@
     font-weight: 300;
     line-height: normal;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
   }
 }
 
@@ -80,7 +85,7 @@
     align-self: self-start;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 68px;
+    column-gap: 10px;
   }
 }
 
@@ -116,6 +121,15 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__title--friends {
+  @media (max-width: $tablet-only) {
+    br {
+      display: none;
+    }
   }
 }
 
@@ -156,7 +170,7 @@
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 68px;
+    column-gap: 10px;
   }
 }
 
@@ -164,6 +178,8 @@
   position: relative;
 
   @media (min-width: $desktop-width) {
+    padding-top: 23px;
+
     &::before {
       position: absolute;
       bottom: -11px;
@@ -196,7 +212,7 @@
   @media (min-width: $desktop-width) {
     @include sizes (186px, 382px);
     margin: auto;
-    margin-bottom: -64px;
+    margin-bottom: -81px;
   }
 }
 

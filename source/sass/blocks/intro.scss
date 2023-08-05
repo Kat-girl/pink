@@ -10,6 +10,10 @@
     padding-top: 0;
     padding-bottom: 96px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 124px;
+  }
 }
 
 .intro__link {
@@ -27,6 +31,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
   }
 
   &:hover {
@@ -50,6 +60,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 44px;
     margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
   }
 }
 

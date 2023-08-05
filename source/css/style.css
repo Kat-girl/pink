@@ -435,7 +435,8 @@
 }
 @media (min-width: 1024px) {
   .page-header__main {
-    padding-bottom: 40px;
+    padding-top: 26px;
+    padding-bottom: 30px;
   }
 }
 
@@ -465,7 +466,7 @@
 .page-header__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 960px;
+  max-width: 940px;
   margin: auto;
 }
 
@@ -536,7 +537,7 @@
 
 @media (min-width: 1024px) {
   .page-header__additional {
-    padding-top: 114px;
+    padding-top: 98px;
   }
   .page-header__additional--index {
     background: url("../../img/hand-phone-desktop.png") no-repeat bottom right;
@@ -557,7 +558,7 @@
 }
 @media (min-width: 1024px) {
   .page-header__container {
-    padding-left: 80px;
+    padding-left: 110px;
   }
 }
 .page-header__title {
@@ -576,7 +577,7 @@
 }
 @media (min-width: 1024px) {
   .page-header__title {
-    margin-bottom: 51px;
+    margin-bottom: 38px;
     font-size: 50px;
     line-height: normal;
   }
@@ -729,7 +730,7 @@
 }
 @media (max-width: 1023px) and (min-width: 660px) {
   .navigation--opened .navigation__wrapper {
-    top: 83px;
+    top: 110px;
   }
 }
 @media (max-width: 1023px) {
@@ -763,7 +764,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    column-gap: 40px;
+    column-gap: 50px;
   }
 }
 
@@ -895,6 +896,11 @@
     padding-bottom: 96px;
   }
 }
+@media (min-width: 1024px) {
+  .intro {
+    padding-bottom: 124px;
+  }
+}
 
 .intro__link {
   display: block;
@@ -912,6 +918,13 @@
 @media (min-width: 660px) {
   .intro__link {
     margin-bottom: 46px;
+  }
+}
+@media (min-width: 1024px) {
+  .intro__link {
+    margin-bottom: 70px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
   }
 }
 .intro__link:hover {
@@ -936,6 +949,11 @@
   .intro__list {
     padding-left: 44px;
     margin-bottom: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .intro__list {
+    margin-bottom: 36px;
   }
 }
 
@@ -974,6 +992,7 @@
 }
 @media (min-width: 1024px) {
   .advantages {
+    padding-top: 62px;
     padding-bottom: 59px;
     background-size: 1200px 715px;
     background-position: center bottom -82px;
@@ -1005,6 +1024,11 @@
     font-weight: 300;
     line-height: normal;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .advantages__slogan {
+    font-size: 50px;
   }
 }
 
@@ -1050,7 +1074,7 @@
     align-self: self-start;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 68px;
+    column-gap: 10px;
   }
 }
 
@@ -1090,6 +1114,13 @@
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .advantages__title--friends br {
+    display: none;
   }
 }
 
@@ -1134,7 +1165,7 @@
     grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 68px;
+    column-gap: 10px;
   }
 }
 
@@ -1142,6 +1173,9 @@
   position: relative;
 }
 @media (min-width: 1024px) {
+  .advantages__image-wrapper {
+    padding-top: 23px;
+  }
   .advantages__image-wrapper::before {
     position: absolute;
     bottom: -11px;
@@ -1177,7 +1211,7 @@
     width: 186px;
     height: 382px;
     margin: auto;
-    margin-bottom: -64px;
+    margin-bottom: -81px;
   }
 }
 
@@ -1604,16 +1638,13 @@
   top: -70px;
   right: 0;
   left: 0;
-  content: url("../../img/triangle-white-footer.svg");
+  width: 100%;
+  height: 123px;
+  background: url("../../img/triangle-white-footer.svg") no-repeat center top;
+  background-size: 100% 123px;
+  content: "DDD";
   z-index: 1;
 }
-@media (min-width: 660px) {
-  .contacts__map-container::before {
-    content: url("../../img/triangle-white-footer-tablet.svg");
-    top: -56px;
-  }
-}
-
 .contacts__map {
   border: 0;
   min-width: 100%;

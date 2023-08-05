@@ -106,12 +106,16 @@
     top: -70px;
     right: 0;
     left: 0;
-    content: url("../../img/triangle-white-footer.svg");
+    width: 100%;
+    height: 123px;
+    background: url("../../img/triangle-white-footer.svg") no-repeat center top;
+    background-size: 100% 123px;
+    content: "DDD";
     z-index: 1;
 
     @media (min-width: $tablet-width) {
-      content: url("../../img/triangle-white-footer-tablet.svg");
-      top: -56px;
+      // content: url("../../img/triangle-white-footer-tablet.svg");
+      // top: -56px;
     }
   }
 }
