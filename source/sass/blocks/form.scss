@@ -16,7 +16,7 @@
 
 .form__personal-info {
   @include padding-lr (20px, 20px);
-  margin-bottom: 15px;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
@@ -61,7 +61,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 29px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -83,7 +83,7 @@
   box-sizing: border-box;
   flex-grow: 1;
 
-  @include padding-tb (20px, 20px);
+  @include padding-tb (22px, 22px);
   padding-left: 20px;
 
   &:hover {
@@ -193,8 +193,8 @@
 
 .form__input--checkbox:checked + .form__checkbox::before {
   position: absolute;
-  top: 5px;
-  left: 8px;
+  top: 3px;
+  left: 6px;
   content: url("../../img/tick.svg");
 }
 
@@ -227,8 +227,8 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 44px;
-  transform: translateY(47px);
+  margin-bottom: 58px;
+  transform: translateY(55px);
 
   @media (min-width: $tablet-width) {
     @include padding-lr (25px, 25px);
@@ -244,6 +244,10 @@
 }
 
 .form__legend--emotions {
+  transform: translateY(40px);
+  margin-bottom: 0;
+  padding-top: 33px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
   }
@@ -264,7 +268,7 @@
 
 .form__item {
   position: relative;
-  margin-bottom: 47px;
+  margin-bottom: 52px;
 }
 
 .form__item:last-of-type {
@@ -310,7 +314,7 @@
 }
 
 .form__contacts {
-  padding-top: 42px;
+  padding-top: 34px;
 
   @media (min-width: $tablet-width) {
     @include padding-lr (40px, 40px);
@@ -365,7 +369,7 @@
 }
 
 .form__item-radio {
-  margin-bottom: 38px;
+  margin-bottom: 47px;
 }
 
 .form__item-radio:last-of-type {
@@ -424,7 +428,7 @@
   transform: translateY(22px);
   min-height: 197px;
   width: 100%;
-  margin-bottom: 52px;
+  margin-bottom: 48px;
   color: $color-major;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -446,7 +450,7 @@
 
 .form__button {
   width: 100%;
-  margin-bottom: 46px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;

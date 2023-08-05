@@ -1,5 +1,6 @@
 .questionnaire {
-  padding-top: 54px;
+  padding-top: 45px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
@@ -8,7 +9,7 @@
 
 .questionnaire__title {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 37px;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
