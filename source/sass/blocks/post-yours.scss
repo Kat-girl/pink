@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-bottom: 78px;
+    margin-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +24,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    @include padding-tb (57px, 54px);
+    @include padding-tb (57px, 53px);
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr) repeat(2, min-content);
     row-gap: 24px;
@@ -99,6 +99,7 @@
     flex-direction: column;
     align-items: start;
     padding-bottom: 0;
+    margin-bottom: 28px;
   }
 }
 
@@ -109,7 +110,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   &:last-of-type {
@@ -126,7 +127,13 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    transform: translateY(10px);  //выравнивание кнопки по вертикали
+    transform: translate(-10px, -10px);  //выравнивание кнопки по макету
+  }
+
+  &--contrast {
+    @media (min-width: $tablet-width) {
+      transform: translate(-3px, -10px);  //выравнивание кнопки по макету
+    }
   }
 }
 
@@ -163,7 +170,7 @@
     @media (min-width: $tablet-width) {
       left: 0;
       right: 20px;
-      bottom: 0;
+      bottom: 21px;
     }
   }
 }
@@ -222,9 +229,9 @@
     right: 21px;
 
     @media (min-width: $tablet-width) {
-      top: -25px;
-      left: 65px;
-      right: 40px;
+      top: -47px;
+      left: 53px;
+      right: 37px;
       transform: translateY(10px);
     }
 
@@ -296,6 +303,8 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    width: 90%;
+    margin: auto;
     margin-bottom: 0;
   }
 

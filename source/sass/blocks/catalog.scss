@@ -3,8 +3,8 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
-    margin-bottom: 73px;
+    padding-top: 90px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +24,7 @@
   @media (min-width: $tablet-width) {
     @include padding-lr (70px, 70px);
     font-size: 18px;
-    margin-bottom: 85px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,7 +96,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: auto 31px;
-    padding: 14px 30px;
+    padding: 24px 30px;
     min-height: 155px;
   }
 }
@@ -147,6 +147,12 @@
   }
 }
 
+.catalog__text__br--pic-of-the-day--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .catalog__button-like {
   @include button-style-clear;
   @include sizes (20px, 20px);
@@ -160,6 +166,7 @@
     grid-column: -1 / -2;
     align-self: self-start;
     margin-top: 2px;
+    margin-left: 15px;
   }
 }
 
@@ -169,6 +176,7 @@
     grid-column: -1 / -2;
     align-self: self-start;
     margin-top: 2px;
+    margin-left: 15px;
   }
 }
 
@@ -189,7 +197,6 @@
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     justify-self: end;
-    margin-right: 11px;
   }
 }
 
