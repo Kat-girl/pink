@@ -649,7 +649,7 @@
 }
 
 .page-header__title--catalog {
-  padding-bottom: 80px;
+  padding-bottom: 47px;
 }
 @media (min-width: 660px) {
   .page-header__title--catalog {
@@ -2509,8 +2509,8 @@
 }
 
 .catalog {
-  padding-top: 54px;
-  margin-bottom: 49px;
+  padding-top: 44px;
+  margin-bottom: 40px;
 }
 @media (min-width: 660px) {
   .catalog {
@@ -2528,7 +2528,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -2555,7 +2555,7 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 20px;
+  gap: 19px;
 }
 @media (min-width: 660px) {
   .catalog__list {
@@ -2609,7 +2609,7 @@
 
 .catalog__description-container {
   background-color: #f2f2f2;
-  padding: 26px 10px 25px 17px;
+  padding: 18px 10px 20px 17px;
   display: grid;
   grid-template-rows: min-content auto min-content;
   grid-template-columns: 31px auto;
@@ -2633,7 +2633,6 @@
 
 .catalog__author {
   margin: 0;
-  margin-bottom: 10px;
   font-weight: 700;
   line-height: 24px;
   grid-column: span 2;
@@ -2656,7 +2655,7 @@
 
 .catalog__text {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -2752,7 +2751,7 @@
   padding-left: 35px;
   padding-right: 35px;
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 41px;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -2856,11 +2855,12 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 55px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-right: 11px;
   padding-bottom: 45px;
   position: relative;
 }
@@ -2928,7 +2928,7 @@
 }
 .instruments__range-container::before {
   position: absolute;
-  bottom: -8px;
+  bottom: -16px;
   left: -20px;
   right: -20px;
   height: 1px;
@@ -2991,7 +2991,7 @@
   height: 2px;
   background-color: #283645;
   position: absolute;
-  bottom: 24px;
+  bottom: 19px;
   left: 21px;
   right: 21px;
 }
@@ -3027,7 +3027,7 @@
   height: 2px;
   background-color: #283645;
   position: absolute;
-  bottom: 24px;
+  bottom: 19px;
   left: 21px;
   right: 21px;
 }

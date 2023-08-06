@@ -1,7 +1,7 @@
 .post-yours__title {
   @include padding-lr (35px, 35px);
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 41px;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -86,11 +86,12 @@
 
 .instruments__list {
   @include list-style-clear;
-  margin-bottom: 38px;
+  margin-bottom: 55px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-right: 11px;
   padding-bottom: 45px;
   position: relative;
 
@@ -152,7 +153,7 @@
 
   &::before {
     position: absolute;
-    bottom: -8px;
+    bottom: -16px;
     left: -20px;
     right: -20px;
     height: 1px;
@@ -216,7 +217,7 @@
     height: 2px;
     background-color: $color-major;
     position: absolute;
-    bottom: 24px;
+    bottom: 19px;
     left: 21px;
     right: 21px;
 
@@ -251,7 +252,7 @@
     height: 2px;
     background-color: $color-major;
     position: absolute;
-    bottom: 24px;
+    bottom: 19px;
     left: 21px;
     right: 21px;
 
