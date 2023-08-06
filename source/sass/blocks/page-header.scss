@@ -168,12 +168,13 @@
     }
 
     &--form {
-      padding-bottom: 75px;
+      padding-top: 60px;
+      padding-bottom: 64px;
+    }
 
-      @media (min-width: $desktop-width) {
-        padding-top: 60px;
-        padding-bottom: 64px;
-      }
+    &--catalog {
+      padding-top: 59px;
+      padding-bottom: 52px;
     }
   }
 
@@ -235,8 +236,6 @@
 
   @media (min-width: $desktop-width) {
     @include padding-lr (200px, 200px);
-    padding-top: 74px;
-    padding-bottom: 104px;
   }
 }
 
