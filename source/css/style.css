@@ -1027,22 +1027,19 @@
 
 .advantages {
   padding-top: 40px;
-  background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
-  background-size: 100% 894px;
+  background: url("../../img/grey-background.svg") no-repeat center top 160px;
+  background-size: cover;
 }
 @media (min-width: 660px) {
   .advantages {
     padding-top: 46px;
-    background: url("../../img/grey-background-tablet.svg") no-repeat center bottom -188px;
-    background-size: 1200px 695px;
+    background-position: center top 145px;
   }
 }
 @media (min-width: 1024px) {
   .advantages {
     padding-top: 62px;
     padding-bottom: 59px;
-    background-size: 1200px 715px;
-    background-position: center bottom -82px;
   }
 }
 
@@ -1540,21 +1537,21 @@
 }
 
 .tariffs {
-  background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
-  background-size: 100% 505px;
+  background: url("../../img/grey-background.svg") no-repeat center top -42px;
+  background-size: cover;
   padding-top: 99px;
   padding-bottom: 27px;
 }
 @media (min-width: 660px) {
   .tariffs {
-    background: url("../../img/grey-background-tablet.svg") no-repeat center top;
-    background-size: 100% 695px;
+    background-position: center top -70px;
     padding-top: 124px;
     padding-bottom: 0;
   }
 }
 @media (min-width: 1024px) {
   .tariffs {
+    background-position: center top -160px;
     padding-top: 164px;
     padding-bottom: 75px;
   }

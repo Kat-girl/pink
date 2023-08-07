@@ -1,17 +1,17 @@
 .tariffs {
-  background: url("../../img/grey-background-mobile.svg") no-repeat center bottom;
-  background-size: 100% 505px;
+  background: url("../../img/grey-background.svg") no-repeat center top -42px;
+  background-size: cover;
 
   @include padding-tb (99px, 27px);
 
   @media (min-width: $tablet-width) {
-    background: url("../../img/grey-background-tablet.svg") no-repeat center top;
-    background-size: 100% 695px;
+    background-position: center top -70px;
     padding-top: 124px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
+    background-position: center top -160px;
     padding-top: 164px;
     padding-bottom: 75px;
   }
