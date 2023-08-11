@@ -200,13 +200,11 @@
 }
 
 .instruments__range-input {
-  @include sizes (240px, 2px);
-  @include padding-lr (20px, 20px);
-  --webkit-appearance: none;
-  --moz-appearance: none;
+  width: 100%;  //для мозиллы
+  height: 2px;
+  margin: auto; //для мозиллы
   appearance: none;
   background-color: transparent;
-  margin: 0;
   box-sizing: border-box;
 
   &:focus {
@@ -219,6 +217,16 @@
     &::-moz-range-track {
       outline: 2px solid $color-black;
     }
+  }
+
+  @media (min-width: $tablet-width) {  //для мозиллы
+    width: 80%;
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    padding-left: 80px;
   }
 
   &::-webkit-slider-runnable-track {
@@ -247,7 +255,6 @@
     border: 2px solid $color-pink;
     border-radius: 50%;
     background-color: $color-white;
-    --webkit-appearance: none;
     appearance: none;
     cursor: pointer;
     transform: translateY(-50%);
@@ -269,7 +276,7 @@
       top: -25px;
       left: 65px;
       right: 40px;
-      transform: translateY(10px);
+      transform: translateY(-45px);
     }
 
     @media (min-width: $desktop-width) {
@@ -284,10 +291,16 @@
     border-radius: 50%;
     background-color: $color-white;
     cursor: pointer;
-    transform: translateY(-50%);
 
     &:active {
       background-color: $color-pink;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: -25px;
+      left: 65px;
+      right: 40px;
+      transform: translateY(-45px);
     }
   }
 }
