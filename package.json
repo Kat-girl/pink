@@ -1,5 +1,5 @@
 {
-  "name": "{{projectName}}",
+  "name": "pink",
   "private": true,
   "description": "Личный проект «{{projectTitle}}» от HTML Academy",
   "devDependencies": {
