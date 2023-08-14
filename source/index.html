@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -121,20 +121,21 @@
                 <picture>
                   <source media="(min-width: 1024px)" srcset="img/phone-mood-desktop.png 1x, img/phone-mood-desktop@2x.png 2x">
                   <!-- Здесь не прописан src, чтобы картинка не загружалась в моб. и планш. версии -->
-                  <img src="" alt="Телефон со смайликом." width="186" height="382" class="advantages__image advantages__image-mood--desktop">
+                  <img src="" alt="" width="186" height="382" class="advantages__image advantages__image-mood--desktop">
                 </picture>
               </div>
               <div class="advantages__image-wrapper">
                 <picture>
                   <source media="(min-width: 1024px)" srcset="img/phone-world-desktop.png 1x, img/phone-world-desktop@2x.png 2x">
                   <!-- Здесь не прописан src, чтобы картинка не загружалась в моб. и планш. версии -->
-                  <img src="" alt="Телефон со смайликом." width="186" height="382" class="advantages__image advantages__image-world--desktop">
+                  <img src="" alt="" width="186" height="382" class="advantages__image advantages__image-world--desktop">
                 </picture>
               </div>
               <div class="advantages__image-wrapper">
                 <picture>
                   <source media="(min-width: 1024px)" srcset="img/phone-friends-desktop.png 1x, img/phone-friends-desktop@2x.png 2x">
                   <source media="(min-width: 660px)" srcset="img/phone-friends-tablet.png 1x, img/phone-friends-tablet@2x.png 2x">
+                  <!-- Эта картинка должна отображаться в моб. и планш. версии -->
                   <img src="img/phone-friends-mobile.png" srcset="img/phone-friends-mobile@2x.png 2x" alt="Телефон со смайликом." width="157" height="320" class="advantages__image">
                 </picture>
               </div>
@@ -406,6 +407,6 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
