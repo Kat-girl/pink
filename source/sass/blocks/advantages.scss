@@ -209,58 +209,66 @@
 .advantages__image-item--mood {
   @media (min-width: $desktop-width) {
     height: 301px;
-    background: url("../../img/phone-mood-desktop.png") no-repeat top 22px center;
+    background-image: image-set(
+      "../../img/phone-mood-desktop.webp" type("image/webp") 1x,
+      "../../img/phone-mood-desktop@2x.webp" type("image/webp") 2x,
+      "../../img/phone-mood-desktop.png" type("image/png") 1x,
+      "../../img/phone-mood-desktop@2x.png" type("image/png") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: top 22px center;
     background-size: 186px 382px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/phone-mood-desktop@2x.png");
-      background-size: 186px 382px;
-    }
   }
 }
 
 .advantages__image-item--world {
   @media (min-width: $desktop-width) {
     height: 301px;
-    background: url("../../img/phone-world-desktop.png") no-repeat top 22px center;
+    background-image: image-set(
+      "../../img/phone-world-desktop.webp" type("image/webp") 1x,
+      "../../img/phone-world-desktop@2x.webp" type("image/webp") 2x,
+      "../../img/phone-world-desktop.png" type("image/png") 1x,
+      "../../img/phone-world-desktop@2x.png" type("image/png") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: top 22px center;
     background-size: 186px 382px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/phone-world-desktop@2x.png");
-      background-size: 186px 382px;
-    }
   }
 }
 
 .advantages__image-item--friends {
   height: 290px;
-  background: url("../../img/phone-friends-mobile.png") no-repeat top 12px center;
+  background-image: image-set(
+    "../../img/phone-friends-mobile.webp" type("image/webp") 1x,
+    "../../img/phone-friends-mobile@2x.webp" type("image/webp") 2x,
+    "../../img/phone-friends-mobile.png" type("image/png") 1x,
+    "../../img/phone-friends-mobile@2x.png" type("image/png") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: top 12px center;
   background-size: 157px 320px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/phone-friends-mobile@2x.png");
-    background-size: 157px 320px;
-  }
 
   @media (min-width: $tablet-width) {
     height: 482px;
-    background: url("../../img/phone-friends-tablet.png") no-repeat top left;
+    background-image: image-set(
+      "../../img/phone-friends-tablet.webp" type("image/webp") 1x,
+      "../../img/phone-friends-tablet@2x.webp" type("image/webp") 2x,
+      "../../img/phone-friends-tablet.png" type("image/png") 1x,
+      "../../img/phone-friends-tablet@2x.png" type("image/png") 2x
+    );
+    background-position: top left;
     background-size: 268px 547px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/phone-friends-tablet@2x.png");
-      background-size: 268px 547px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     height: 301px;
-    background: url("../../img/phone-friends-desktop.png") no-repeat top 22px center;
+    background-image: image-set(
+      "../../img/phone-friends-desktop.webp" type("image/webp") 1x,
+      "../../img/phone-friends-desktop@2x.webp" type("image/webp") 2x,
+      "../../img/phone-friends-desktop.png" type("image/png") 1x,
+      "../../img/phone-friends-desktop@2x.png" type("image/png") 2x
+    );
+    background-position: top 22px center;
     background-size: 186px 382px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/phone-friends-desktop@2x.png");
-      background-size: 186px 382px;
-    }
   }
 }
