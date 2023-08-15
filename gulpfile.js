@@ -101,7 +101,7 @@ export const clean = () => {
 
 // Server
 
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: 'build'
@@ -113,12 +113,19 @@ const server = (done) => {
   done();
 }
 
+// reload
+
+const reload = (done) => {
+  browser.reload()
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html', gulp.series(html, browser.reload));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // build

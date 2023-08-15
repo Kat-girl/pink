@@ -1,6 +1,5 @@
 .table {
   width: 828px;
-  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -14,7 +13,6 @@
 
 .table__header__cell {
   border-radius: 1px 0 0 0;
-  border: 2px solid #e5e5e5;
   border-top-color: $color-major;
   text-align: center;
   line-height: 30px;
@@ -43,13 +41,13 @@
 
   &::before {
     position: absolute;
-    top: -1px;
-    left: -1px;
+    top: 0;
+    left: -2px;
     content: url("../../img/hit-ribbon.svg");
 
     @media (min-width: $tablet-width) {
       content: url("../../img/hit-ribbon-tablet.svg");
-      top: -2px;
+      top: 0;
       left: 0;
     }
   }
@@ -108,7 +106,6 @@
 
 .table__cell {
   background-color: $color-white;
-  border: 2px solid #e5e5e5;
   color: $color-major;
   font-weight: 400;
   line-height: 27px;

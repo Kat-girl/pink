@@ -48,6 +48,10 @@
   left: -56%;
   transform: translateX(-11%);
 
+  @media (min-width: 470px) {
+    transform: translateX(10%);
+  }
+
   @media (min-width: $tablet-width) {
     position: static;
     transform: none;
