@@ -249,7 +249,14 @@
 
 @media (min-width: 1440px) {
   .page-header__additional--index {
-    background: url("../../img/hand-phone-desktop.png") no-repeat bottom right 20%;
+    background-image: image-set(
+      "../../img/hand-phone-desktop.webp" type("image/webp") 1x,
+      "../../img/hand-phone-desktop@2x.webp" type("image/webp") 2x,
+      "../../img/hand-phone-desktop.png" type("image/png") 1x,
+      "../../img/hand-phone-desktop@2x.png" type("image/png") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: bottom right 20%;
     background-size: 1050px 645px;
     height: auto;
   }
