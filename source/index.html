@@ -112,34 +112,18 @@
                 <p class="advantages__description advantages__description--world">Сделайте снимок и<br> украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
               <li class="advantages__item">
-                <h3 class="advantages__title advantages__title--friends">Заводит <br> новых друзей</h3>
+                <h3 class="advantages__title advantages__title--friends">Заводит <span> </span> <br> новых друзей</h3>
                 <p class="advantages__description advantages__description--friends">Ставьте лайки,<br> комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <div class="advantages__image-container">
-              <div class="advantages__image-wrapper">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="img/phone-mood-desktop.png 1x, img/phone-mood-desktop@2x.png 2x">
-                  <!-- Здесь не прописан src, чтобы картинка не загружалась в моб. и планш. версии -->
-                  <img src="" alt="" width="186" height="382" class="advantages__image advantages__image-mood--desktop">
-                </picture>
-              </div>
-              <div class="advantages__image-wrapper">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="img/phone-world-desktop.png 1x, img/phone-world-desktop@2x.png 2x">
-                  <!-- Здесь не прописан src, чтобы картинка не загружалась в моб. и планш. версии -->
-                  <img src="" alt="" width="186" height="382" class="advantages__image advantages__image-world--desktop">
-                </picture>
-              </div>
-              <div class="advantages__image-wrapper">
-                <picture>
-                  <source media="(min-width: 1024px)" srcset="img/phone-friends-desktop.png 1x, img/phone-friends-desktop@2x.png 2x">
-                  <source media="(min-width: 660px)" srcset="img/phone-friends-tablet.png 1x, img/phone-friends-tablet@2x.png 2x">
-                  <!-- Эта картинка должна отображаться в моб. и планш. версии -->
-                  <img src="img/phone-friends-mobile.png" srcset="img/phone-friends-mobile@2x.png 2x" alt="Телефон со смайликом." width="157" height="320" class="advantages__image">
-                </picture>
-              </div>
-            </div>
+            <ul class="advantages__image-list">
+              <li class="advantages__image-item advantages__image-item--mood">
+              </li>
+              <li class="advantages__image-item advantages__image-item--world">
+              </li>
+              <li class="advantages__image-item advantages__image-item--friends">
+              </li>
+            </ul>
           </div>
         </div>
       </section>
