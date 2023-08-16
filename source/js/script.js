@@ -17,3 +17,5 @@ navToggle.addEventListener('click', function() {
     headerMain.classList.remove('page-header__main--nav-opened');
   }
 });
+
+document.addEventListener('touchstart', onTouchStart, {passive: true});
