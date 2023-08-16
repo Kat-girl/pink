@@ -98,17 +98,21 @@
     display: none;
   }
 
+  .navigation--nojs {
+    position: relative;
+    left: -20px;
+  }
+
   .navigation--nojs .navigation__wrapper {
     display: block;
     position: relative;
     width: 100vw;
     top: 15px;
-    left: -20px;
+    left: 0;
     right: 0;
 
     @media (min-width: $tablet-width) {
       top: 29px;
-      left: -35px;
     }
   }
 }

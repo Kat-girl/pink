@@ -71,6 +71,10 @@
 
 .page-header__main--nav-opened {
   background-color: $color-major;
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header__wrapper {
@@ -83,6 +87,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .page-header__additional {
